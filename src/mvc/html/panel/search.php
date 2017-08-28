@@ -1,6 +1,6 @@
 <!-- HTML Document -->
 
-<div class="bbn-task-splitter bbn-full-height">
+<div class="bbn-task-splitter" v-bbn-fill-height>
   <div class="bbn-task-search-container">
     <div class="bbn-form-full bbn-c">
       <div class="bbn-block" style="margin: 0 2em">
@@ -10,8 +10,8 @@
           <option value="all"><?=_("All")?></option>
         </select>
       </div>
-      <div class="bbn-block bbn-full-width">
-        <input name="title" class="bbn-xl bbn-full-width k-textbox" placeholder="<?=_("Search or Title for the new task")?>">
+      <div class="bbn-block" v-bbn-fill-width>
+        <input name="title" class="bbn-xl k-textbox" v-bbn-fill-width placeholder="<?=_("Search or Title for the new task")?>">
       </div>
       <div class="bbn-block" style="margin: 0 2em">
         <button class="k-button bbn-xl" data-bind="click: create_task">
