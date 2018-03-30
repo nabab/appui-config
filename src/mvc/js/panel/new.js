@@ -96,7 +96,7 @@ kendo.bind(ele, {
                   }
                   $(this).closest("div.bbn-nl").remove();
                 };
-                if ( id_user !== bbn.env.userId ){
+                if ( id_user !== appui.app.userId ){
                   del();
                 }
                 else{

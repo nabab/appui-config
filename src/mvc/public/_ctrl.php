@@ -17,8 +17,4 @@
 // msgfmt -o appui_task.mo appui_task.po
 
 $ctrl->data['root'] = $ctrl->say_dir().'/';
-bindtextdomain('appui_task', BBN_LIB_PATH.'bbn/bbn-task/src/locale');
-setlocale(LC_ALL, "fr_FR.utf8");
-textdomain('appui_task');
-
 return 1;
