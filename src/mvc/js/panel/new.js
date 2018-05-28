@@ -100,7 +100,7 @@ kendo.bind(ele, {
                   del();
                 }
                 else{
-                  bbn.fn.confirm(data.confirm_delete, function(){
+                  appui.confirm(data.confirm_delete, function(){
                     del();
                   })
                 }
@@ -361,7 +361,7 @@ var uploadedFiles = [],
             var idx = bbn.fn.search(uploadedFiles, "name", e.files[0].name);
             if ( idx > -1 ){
               e.preventDefault();
-              bbn.fn.alert(data.lng.file_exists);
+              appui.alert(data.lng.file_exists);
               return false;
             }
           }
@@ -388,11 +388,11 @@ var uploadedFiles = [],
             }
           }
           else{
-            bbn.fn.alert(data.lng.problem_file);
+            appui.alert(data.lng.problem_file);
           }
         },
         error:function(e){
-          bbn.fn.alert(data.lng.error_uploading)
+          appui.alert(data.lng.error_uploading)
         }
       });
     };

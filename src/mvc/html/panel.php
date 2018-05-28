@@ -122,11 +122,11 @@
 
       <div class="bbn-form-field" data-bind="invisible: has_comments">
         <div class="bbn-form-label bbn-p" style="width: 140px">
-          <!--button class="k-button" onclick="bbn.fn.alert('Link')">
+          <!--button class="k-button" onclick="appui.alert('Link')">
             <i class="fa fa-link"> </i> &nbsp; <?=_("Link")?>
           </button>
           &nbsp;&nbsp;
-          <button class="k-button" onclick="bbn.fn.alert('Link')">
+          <button class="k-button" onclick="appui.alert('Link')">
             <i class="fa fa-code"> </i> &nbsp; <?=_("Code")?>
           </button-->
         </div>

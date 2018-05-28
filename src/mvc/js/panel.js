@@ -57,7 +57,7 @@ $.extend(bbn.tasks, {
           tabnav.tabNav("link", data.root + 'panel/tasks/' + e.success);
         }
         else{
-          bbn.fn.alert();
+          bbn.fn.error();
         }
       });
     })
@@ -172,7 +172,7 @@ $.extend(bbn.tasks, {
                   prop = "workers";
                 }
                 if ( prop ){
-                  bbn.fn.confirm(bbn.tasks.lng.sure_to_unfollow, function(){
+                  appui.confirm(bbn.tasks.lng.sure_to_unfollow, function(){
                     bbn.fn.post(data.root + "actions/role/delete", {id_task: info.id, id_user: appui.app.userId, role: bbn.tasks.roles[prop]}, function(d){
                       var idx = $.inArray(appui.app.userId, mvvm.roles.get(prop))
                       if ( idx > -1 ){
@@ -206,7 +206,7 @@ $.extend(bbn.tasks, {
               },
               close: function(){
                 var mvvm = this;
-                bbn.fn.confirm(bbn.tasks.lng.sure_to_close, function(){
+                appui.confirm(bbn.tasks.lng.sure_to_close, function(){
                   bbn.fn.post(data.root + "actions/task/update", {id_task: info.id, prop: "state", val: bbn.tasks.states.closed}, function(d){
                     if ( d.success ){
                       mvvm.set("state", bbn.tasks.states.closed);
@@ -222,7 +222,7 @@ $.extend(bbn.tasks, {
               },
               hold: function(e){
                 var mvvm = this;
-                bbn.fn.confirm(bbn.tasks.lng.sure_to_hold, function(){
+                appui.confirm(bbn.tasks.lng.sure_to_hold, function(){
                   bbn.fn.post(data.root + "actions/task/update", {id_task: info.id, prop: "state", val: bbn.tasks.states.holding}, function(d){
                     if ( d.success ){
                       mvvm.set("state", bbn.tasks.states.holding);
@@ -238,7 +238,7 @@ $.extend(bbn.tasks, {
               },
               resume: function(e){
                 var mvvm = this;
-                bbn.fn.confirm(bbn.tasks.lng.sure_to_resume, function(){
+                appui.confirm(bbn.tasks.lng.sure_to_resume, function(){
                   bbn.fn.post(data.root + "actions/task/update", {id_task: info.id, prop: "state", val: bbn.tasks.states.ongoing}, function(d){
                     if ( d.success ){
                       mvvm.set("state", bbn.tasks.states.ongoing);
@@ -284,7 +284,7 @@ $.extend(bbn.tasks, {
                       ref: $("input[name=ref]", ele).val(),
                     };
                 if ( !v.title && !v.text ){
-                  bbn.fn.alert(bbn.tasks.lng.no_comment_text)
+                  appui.alert(bbn.tasks.lng.no_comment_text)
                 }
                 else{
                   bbn.fn.post(data.root + 'actions/comment/insert', v, function(d){
@@ -298,7 +298,7 @@ $.extend(bbn.tasks, {
                       $("input[name=comment_title]", ele).val('').trigger("change").parent().parent().hide().prev().hide();
                     }
                     else{
-                      bbn.fn.alert();
+                      appui.alert();
                     }
                   });
                 }
@@ -510,7 +510,7 @@ $.extend(bbn.tasks, {
                   e.preventDefault();
                   uploadWrapper = $("div.bbn-task-upload-wrapper", ele);
                   bbn.fn.analyzeContent(uploadWrapper);
-                  bbn.fn.alert(bbn.tasks.lng.file_exists);
+                  appui.alert(bbn.tasks.lng.file_exists);
                   return false;
                 }
                 else{
@@ -538,11 +538,11 @@ $.extend(bbn.tasks, {
                 app.createUpload(uploadedFiles);
               }
               else{
-                bbn.fn.alert(bbn.tasks.lng.problem_file);
+                appui.alert(bbn.tasks.lng.problem_file);
               }
             },
             error:function(e){
-              bbn.fn.alert(bbn.tasks.lng.error_uploading)
+              appui.alert(bbn.tasks.lng.error_uploading)
             }
           });
           bbn.fn.analyzeContent(uploadWrapper);
@@ -845,7 +845,7 @@ $.extend(bbn.tasks, {
               if ( insert ){
                 bbn.fn.post(data.root + 'actions/role/insert', {id_task: info.id, role: prop, id_user: id}, function(d){
                   if ( !d.success ){
-                    bbn.fn.alert();
+                    appui.alert();
                   }
                 });
               }
@@ -865,7 +865,7 @@ $.extend(bbn.tasks, {
                 '&nbsp;',
                 $closer.click(function(){
                   if ( !info.can_change() ){
-                    bbn.fn.alert(bbn.tasks.lng.no_role_permission);
+                    appui.alert(bbn.tasks.lng.no_role_permission);
                     return;
                   }
                   var idx = $.inArray(id, info.roles.get(prop));
@@ -873,7 +873,7 @@ $.extend(bbn.tasks, {
                   if ( (idx > -1) ){
                     bbn.fn.post(data.root + 'actions/role/delete', {id_task: info.id, role: prop, id_user: id}, function(d){
                       if ( !d.success ){
-                        bbn.fn.alert();
+                        appui.alert();
                       }
                       else{
                         $ele.show();
@@ -899,7 +899,7 @@ $.extend(bbn.tasks, {
             val: val
           }, function(d){
             if ( !d.success ){
-              bbn.fn.alert();
+              appui.alert();
             }
           })
         }
