@@ -120,21 +120,21 @@ $.extend(bbn.tasks, {
               },
               is_manager: function(){
                 var managers = this.roles.get("managers");
-                if ( managers && ($.inArray(appui.app.userId, managers) > -1) ){
+                if ( managers && ($.inArray(appui.app.user.id, managers) > -1) ){
                   return true;
                 }
                 return false;
               },
               is_worker: function(){
                 var workers = this.roles.get("workers");
-                if ( workers && ($.inArray(appui.app.userId, workers) > -1) ){
+                if ( workers && ($.inArray(appui.app.user.id, workers) > -1) ){
                   return true;
                 }
                 return false;
               },
               is_viewer: function(){
                 var viewers = this.roles.get("viewers");
-                if ( viewers && ($.inArray(appui.app.userId, viewers) > -1) ){
+                if ( viewers && ($.inArray(appui.app.user.id, viewers) > -1) ){
                   return true;
                 }
                 return false;
@@ -146,7 +146,7 @@ $.extend(bbn.tasks, {
                 var mvvm = this,
                     role = $(e.item).attr("data-task-role");
                 if ( role && bbn.tasks.roles[role] ){
-                  bbn.fn.post(data.root + 'actions/role/insert', {id_task: info.id, role: bbn.tasks.roles[role], id_user: appui.app.userId}, function(d){
+                  bbn.fn.post(data.root + 'actions/role/insert', {id_task: info.id, role: bbn.tasks.roles[role], id_user: appui.app.user.id}, function(d){
                     if ( app.userUID ){
                       // @todo Do something to update the roles tab
                       app.tree.findByUid(app.userUID);
@@ -154,7 +154,7 @@ $.extend(bbn.tasks, {
                     if ( !mvvm.roles[role] ){
                       mvvm.roles.set(role, []);
                     }
-                    mvvm.roles[role].push(appui.app.userId);
+                    mvvm.roles[role].push(appui.app.user.id);
                     tabstrip.tabNav("enable", 1);
                   });
                 }
@@ -173,8 +173,8 @@ $.extend(bbn.tasks, {
                 }
                 if ( prop ){
                   appui.confirm(bbn.tasks.lng.sure_to_unfollow, function(){
-                    bbn.fn.post(data.root + "actions/role/delete", {id_task: info.id, id_user: appui.app.userId, role: bbn.tasks.roles[prop]}, function(d){
-                      var idx = $.inArray(appui.app.userId, mvvm.roles.get(prop))
+                    bbn.fn.post(data.root + "actions/role/delete", {id_task: info.id, id_user: appui.app.user.id, role: bbn.tasks.roles[prop]}, function(d){
+                      var idx = $.inArray(appui.app.user.id, mvvm.roles.get(prop))
                       if ( idx > -1 ){
                         mvvm.roles[prop].splice(idx, 1);
                         tabstrip.tabNav("disable", 1);
@@ -190,7 +190,7 @@ $.extend(bbn.tasks, {
                 if ( this.is_manager() ){
                   return true;
                 }
-                return appui.app.userId === this.get("id_user");
+                return appui.app.user.id === this.get("id_user");
               },
               can_change: function(){
                 return !this.is_closed() && this.is_master();
@@ -715,7 +715,7 @@ $.extend(bbn.tasks, {
           $li.draggable(dragCfg).each(function(){
             var dataItem = app.roleTree.dataItem(this);
             if ( !dataItem.is_parent ){
-              if ( dataItem.id === appui.app.userId ){
+              if ( dataItem.id === appui.app.user.id ){
                 app.userUID = dataItem.uid;
               }
               for ( var n in roles ){

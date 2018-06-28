@@ -6,7 +6,7 @@
 
 /** @var $ctrl \bbn\mvc\controller */
 if ( !isset($ctrl->post['id']) ){
-  echo $ctrl->set_title('<i class="fa fa-clock-o"> </i> &nbsp; _("Mes tâches en cours")')->add_js([
+  echo $ctrl->set_title('<i class="far fa-clock"> </i> &nbsp; _("Mes tâches en cours")')->add_js([
     'root' => $ctrl->data['root'],
     'lng' => [
       'title' => _("Title"),

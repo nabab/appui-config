@@ -96,7 +96,7 @@
             </ul>
           </div>
           <button data-bind="visible: can_ping, click: ping" class="k-button" title="<?=_("Ping workers")?>">
-            <i class="fa fa-hand-o-up"> </i>
+            <i class="far fa-hand-up"> </i>
           </button>
           <button data-bind="visible: is_added, click: unmake_me" class="k-button" title="<?=_("Unfollow the task")?>">
             <i class="fa fa-user-times"> </i>
@@ -109,7 +109,7 @@
         </div>
         <div data-bind="visible: is_closed">
           <button data-bind="visible: can_open, click: reopen" class="k-button" title="<?=_("Reopen")?>">
-            <i class="fa fa-hand-o-left"> </i>
+            <i class="far fa-hand-left"> </i>
           </button>
         </div>
       </div>
