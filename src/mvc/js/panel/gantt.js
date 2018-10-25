@@ -111,7 +111,7 @@ $("div.bbn-task-gantt", ele).kendoTreeList({
       title: " ",
       width: 50,
       template: function(e){
-        return '<a href="' + data.root + 'projects/' + e.id + '" title="' + data.lng.see_task + '"><button class="k-button"><i class="fa fa-eye"> </i></button></a>';
+        return '<a href="' + data.root + 'projects/' + e.id + '" title="' + data.lng.see_task + '"><button class="k-button"><i class="fas fa-eye"> </i></button></a>';
       }
     }
   ]

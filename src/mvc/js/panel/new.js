@@ -88,7 +88,7 @@ kendo.bind(ele, {
             $('<div class="bbn-nl"/>').append(
               /** @todo Change this! */
               '<span>' + apst.fnom(d.res)  + ' (' + frole + ')</span> &nbsp; ',
-              $('<i class="fa fa-times bbn-p"/>').click(function(e){
+              $('<i class="fas fa-times bbn-p"/>').click(function(e){
                 var del = function(){
                   var idx = $.inArray(dataItem.users, id_user);
                   if ( idx > -1 ){
@@ -166,7 +166,7 @@ $tree = $("div.bbn-task-usertree", ele).kendoTreeView({
     }
   },
   template: function (e) {
-    return '<i class="fa fa-' + (e.item.is_parent ? 'users' : 'user') + '"> </i> ' + e.item.text;
+    return '<i class="fas fa-' + (e.item.is_parent ? 'users' : 'user') + '"> </i> ' + e.item.text;
   }
 }).data("kendoTreeView");
 $li = $("li.k-item", $tree.element);
@@ -230,7 +230,7 @@ $("div.bbn-task-assigned", ele).droppable({
         $ele.hide();
         $ul.find("li.k-item:last span").append(
           '&nbsp;',
-          $('<i class="fa fa-times bbn-p"/>').data("id", id).data("ele", $ele).click(function(){
+          $('<i class="fas fa-times bbn-p"/>').data("id", id).data("ele", $ele).click(function(){
             var $$ = $(this);
             $$.data("ele").show();
             v = $input.val();
@@ -413,7 +413,7 @@ $("input[name=link]", ele).keydown(function(e){
       '<tr><td class="k-file k-file-progress">' +
       '<div class="k-progress">' +
       '<table><tr>' +
-      '<td class="bbn-task-link-image"><i class="fa fa-link"> </i></td>' +
+      '<td class="bbn-task-link-image"><i class="fas fa-link"> </i></td>' +
       '<td class="bbn-task-link-title"><div><strong><a href="' + v + '">' + v + '</a></strong><br></div></td>' +
       '<td class="bbn-task-link-actions">' +
         '<span class="k-upload-pct"> </span>' +

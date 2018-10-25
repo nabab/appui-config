@@ -335,7 +335,7 @@ gant_container.kendoGrid({
       sortable: false,
       width: 50,
       template: function(e){
-        return '<a href="' + data.root + 'tasks/' + e.id + '" title="' + bbn.tasks.lng.see_task + '"><button class="k-button"><i class="fa fa-eye"> </i></button></a>';
+        return '<a href="' + data.root + 'tasks/' + e.id + '" title="' + bbn.tasks.lng.see_task + '"><button class="k-button"><i class="fas fa-eye"> </i></button></a>';
       }
     }/*, {
       field: "id_parent",
