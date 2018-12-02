@@ -13,13 +13,11 @@ if ( !isset($ctrl->post['id']) ){
       'type' => _("Type"),
       'state' => _("State"),
       'duration' => _("Duration"),
-      'unknown' => _("Unknown")
+      'unknown' => _("Unknown"),
       'start' => _("Start"),
       'last'=> _("Last"),
-      'deadline' => _("Deadline")
-      'see_task' => _("See task"), // dichiarato in js inserire stringa
-
-
+      'deadline' => _("Deadline"),
+      'see_task' => _("See task")
     ]
   ])->get_view();
 }
