@@ -189,7 +189,7 @@ gant_container.kendoGrid({
           icon = 'pause';
           color = 'grey';
         }
-        return '<i class="bbn-lg fa fa-' + icon + '" style="color: ' + color + '" style="" title="' + bbn.fn.get_field(bbn.tasks.options.states, "value", e.state, "text") + '"> </i>';
+        return '<i class="bbn-lg nf nf-fa-' + icon + '" style="color: ' + color + '" style="" title="' + bbn.fn.get_field(bbn.tasks.options.states, "value", e.state, "text") + '"> </i>';
       }
     }, {
       field: "last_action",
@@ -335,7 +335,7 @@ gant_container.kendoGrid({
       sortable: false,
       width: 50,
       template: function(e){
-        return '<a href="' + data.root + 'tasks/' + e.id + '" title="' + bbn.tasks.lng.see_task + '"><button class="k-button"><i class="fas fa-eye"> </i></button></a>';
+        return '<a href="' + data.root + 'tasks/' + e.id + '" title="' + bbn.tasks.lng.see_task + '"><button class="k-button"><i class="nf nf-fa-eye"> </i></button></a>';
       }
     }/*, {
       field: "id_parent",

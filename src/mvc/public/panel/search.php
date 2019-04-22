@@ -6,7 +6,7 @@
 
 /** @var $ctrl \bbn\mvc\controller */
 if ( !isset($ctrl->post['search']) ){
-  $ctrl->combo('<i class="fas fa-home bbn-lg" title="'._("New task").' / '._("Search").'"> </i>', [
+  $ctrl->combo('<i class="nf nf-fa-home bbn-lg" title="'._("New task").' / '._("Search").'"> </i>', [
     'root' => $ctrl->data['root'],
     'lng' => $ctrl->get_model('./lng/search')
   ]);

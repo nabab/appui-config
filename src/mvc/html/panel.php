@@ -61,7 +61,7 @@
           <div class="bbn-form-field">
             <input type="date" data-role="datepicker" name="deadline" data-bind="value: deadline, events: {keydown: preventAll, change: update}" data-format="yyyy-MM-dd">
             <button class="k-button" data-bind="visible: has_deadline, click: remove_deadline">
-              <i class="fas fa-times"></i>
+              <i class="nf nf-fa-times"></i>
             </button>
           </div>
 
@@ -75,18 +75,18 @@
       <div class="bbn-form-field bbn-lg" class="bbn-task-actions">
         <div data-bind="visible: is_active">
           <button data-bind="visible: can_hold, click: hold" class="k-button" title="<?=_("Put on hold")?>">
-            <i class="fas fa-pause"> </i>
+            <i class="nf nf-fa-pause"> </i>
           </button>
           <button data-bind="visible: can_resume, click: resume" class="k-button" title="<?=_("Resume")?>">
-            <i class="fas fa-play"> </i>
+            <i class="nf nf-fa-play"> </i>
           </button>
           <button data-bind="visible: can_close, click: close" class="k-button" title="<?=_("Close")?>">
-            <i class="fas fa-check"> </i>
+            <i class="nf nf-fa-check"> </i>
           </button>
           <div data-bind="style: {display: make_me_display}" style="vertical-align: middle">
             <ul data-role="menu" data-bind="events: {select: make_me}" style="vertical-align: middle">
               <li>
-                <i class="fas fa-user-plus"> </i>
+                <i class="nf nf-fa-user_plus"> </i>
                 <ul>
                   <li data-task-role="managers"><?=_("Make me a supervisor")?></li>
                   <li data-task-role="workers"><?=_("Make me a worker")?></li>
@@ -96,20 +96,20 @@
             </ul>
           </div>
           <button data-bind="visible: can_ping, click: ping" class="k-button" title="<?=_("Ping workers")?>">
-            <i class="far fa-hand-up"> </i>
+            <i class="nf nf-fa-hand_up"> </i>
           </button>
           <button data-bind="visible: is_added, click: unmake_me" class="k-button" title="<?=_("Unfollow the task")?>">
-            <i class="fas fa-user-times"> </i>
+            <i class="nf nf-fa-user_times"> </i>
           </button>
         </div>
         <div data-bind="visible: is_holding">
           <button data-bind="visible: can_resume, click: resume" class="k-button" title="<?=_("Resume")?>">
-            <i class="fas fa-play"> </i>
+            <i class="nf nf-fa-play"> </i>
           </button>
         </div>
         <div data-bind="visible: is_closed">
           <button data-bind="visible: can_open, click: reopen" class="k-button" title="<?=_("Reopen")?>">
-            <i class="far fa-hand-left"> </i>
+            <i class="nf nf-fa-hand_left"> </i>
           </button>
         </div>
       </div>
@@ -117,17 +117,17 @@
       <div class="bbn-line-breaker"> </div>
       <!--onclick="$(this).next().toggle().redraw().next().toggle().redraw()">-->
       <div class="bbn-form-label bbn-p" onclick="bbn.fn.redraw($(this).parent(), true)">
-        <i class="fas fa-edit"> </i> &nbsp; <?=_("Add a comment")?>
+        <i class="nf nf-fa-edit"> </i> &nbsp; <?=_("Add a comment")?>
       </div>
 
       <div class="bbn-form-field" data-bind="invisible: has_comments">
         <div class="bbn-form-label bbn-p" style="width: 140px">
           <!--button class="k-button" onclick="appui.alert('Link')">
-            <i class="fas fa-link"> </i> &nbsp; <?=_("Link")?>
+            <i class="nf nf-fa-link"> </i> &nbsp; <?=_("Link")?>
           </button>
           &nbsp;&nbsp;
           <button class="k-button" onclick="appui.alert('Link')">
-            <i class="fas fa-code"> </i> &nbsp; <?=_("Code")?>
+            <i class="nf nf-fa-code"> </i> &nbsp; <?=_("Code")?>
           </button-->
         </div>
         <div class="bbn-form-field">
@@ -172,7 +172,7 @@
         <div class="bbn-form-label"> </div>
         <div class="bbn-form-field">
           <button class="k-button bbn-task-comment-button" data-bind="click: add_comment">
-            <i class="fas fa-save"> </i> Save
+            <i class="nf nf-fa-save"> </i> Save
           </button>
         </div>
 
@@ -241,16 +241,16 @@
         <div class="bbn-task-usertree"></div>
         <div class="bbn-task-roles-desc container-placeholder bbn-lg" data-bind="invisible: is_closed">
         	<span data-bind="visible: can_change">
-            <i class="fas fa-question-circle"> </i>
+            <i class="nf nf-fa-question_circle"> </i>
             <?=_("Drag and drop the users into the corresponding role block")?>
           </span>
         	<span data-bind="invisible: can_change">
-            <i class="fas fa-exclamation-circle"> </i>
+            <i class="nf nf-fa-exclamation_circle"> </i>
             <?=_("You have no right to modify the roles in this task")?>
           </span>
         </div>
         <div class="bbn-task-roles-desc container-placeholder bbn-lg" data-bind="visible: is_closed">
-          <i class="fas fa-exclamation-circle"> </i>
+          <i class="nf nf-fa-exclamation_circle"> </i>
           <?=_("You cannot change the roles because the task is closed")?>
         </div>
       </div>
@@ -271,7 +271,7 @@
     </div>
     <div class="bbn-form-label">&nbsp;</div>
     <div class="bbn-form-field">
-      <button class="k-button" type="submit"><i class="fas fa-save"> </i> &nbsp; <?=_("Save")?></button>
+      <button class="k-button" type="submit"><i class="nf nf-fa-save"> </i> &nbsp; <?=_("Save")?></button>
     </div>
   </form>
 </script>

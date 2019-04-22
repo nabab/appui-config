@@ -25,7 +25,7 @@ if ( $obj = $new->get() ){
 
 /*
 if ( empty($ctrl->post['appui_baseURL']) ){
-  $ctrl->combo('<i class="fas fa-bug"> </i> &nbsp; '._("Projects"), true);
+  $ctrl->combo('<i class="nf nf-fa-bug"> </i> &nbsp; '._("Projects"), true);
   $ctrl->obj->bcolor = '#000000';
   $ctrl->obj->fcolor = '#FFFFFF';
   $ctrl->obj->url = $ctrl->say_dir();
@@ -38,7 +38,7 @@ else if ( !empty($ctrl->arguments) ){
   }
 }
 */
-$ctrl->combo('<i class="fas fa-bug"> </i> &nbsp; '._("Projects"), true);
+$ctrl->combo('<i class="nf nf-fa-bug"> </i> &nbsp; '._("Projects"), true);
 $ctrl->obj->bcolor = '#000000';
 $ctrl->obj->fcolor = '#FFFFFF';
 $ctrl->obj->url = $ctrl->say_path();

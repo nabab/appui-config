@@ -94,7 +94,7 @@
           <div class="bbn-form-full">
             <div class="bbn-task-usertree"></div>
             <div class="bbn-task-roles-desc container-placeholder bbn-lg">
-              <i class="fas fa-question-circle"> </i>
+              <i class="nf nf-fa-question_circle"> </i>
               <?=_("Drag and drop the users into the corresponding role block")?>
             </div>
           </div>
@@ -105,7 +105,7 @@
     <div class="bbn-form-label"> </div>
     <div class="bbn-form-field">
       <button class="k-button bbn-lg" data-bind="click: insert">
-        <i class="fas fa-save"> </i>
+        <i class="nf nf-fa-save"> </i>
         <?=_("Create task")?>
       </button>
     </div>

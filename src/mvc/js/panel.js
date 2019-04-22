@@ -13,7 +13,7 @@ var tabnav = $("#appui_task_tabnav").tabNav({
     load: true,
     fcolor: '#000',
     bcolor: '#FFF',
-    title: '<i class="fas fa-home bbn-lg" title="' + data.lng.new_task_search+ '"> </i>'
+    title: '<i class="nf nf-fa-home bbn-lg" title="' + data.lng.new_task_search+ '"> </i>'
   }]
 });
 
@@ -488,7 +488,7 @@ $.extend(bbn.tasks, {
                   });
                 }
                 if ( !done ){
-                  st += '<i class="fa fa-' + app.fileIconClass(e.files[0]) + '"> </i>';
+                  st += '<i class="nf nf-fa-' + app.fileIconClass(e.files[0]) + '"> </i>';
                 }
                 st += '</td><td class="bbn-task-link-title">' + e.name + '</td>' +
                   '<td class="bbn-task-link-actions">' +
@@ -585,7 +585,7 @@ $.extend(bbn.tasks, {
                 '<tr><td class="k-file k-file-progress">' +
                 '<div class="k-progress">' +
                 '<table><tr>' +
-                '<td class="bbn-task-link-image"><i class="fas fa-link"> </i></td>' +
+                '<td class="bbn-task-link-image"><i class="nf nf-fa-link"> </i></td>' +
                 '<td class="bbn-task-link-title"><div><strong><a href="' + v + '">' + v + '</a></strong><br></div></td>' +
                 '<td class="bbn-task-link-actions">' +
                 '<span class="k-upload-pct"> </span>' +
@@ -680,7 +680,7 @@ $.extend(bbn.tasks, {
             },
             template: function (e) {
               if ( e.item.is_parent ){
-                return '<i class="fas fa-users"> </i> ' + e.item.text;
+                return '<i class="nf nf-fa-users"> </i> ' + e.item.text;
               }
               return apst.userFull(e.item.id);
             }
@@ -860,7 +860,7 @@ $.extend(bbn.tasks, {
             );
             $ele.hide();
             if ( prop !== 'managers' ){
-              var $closer = $('<i class="fas fa-times bbn-p"/>');
+              var $closer = $('<i class="nf nf-fa-times bbn-p"/>');
               $ul.find("li.k-item:last span:last").append(
                 '&nbsp;',
                 $closer.click(function(){
@@ -911,7 +911,7 @@ $.extend(bbn.tasks, {
           baseURL: "panel/",
           list: [{
             url: "main",
-            title: '<i class="fas fa-eye"> </i> &nbsp; ' + bbn.tasks.lng.global_view,
+            title: '<i class="nf nf-fa-eye"> </i> &nbsp; ' + bbn.tasks.lng.global_view,
             content: $("#tpl-task_tab_main").html(),
             static: true,
             callonce: function(ele){
@@ -919,7 +919,7 @@ $.extend(bbn.tasks, {
             }
           }, {
             url: "people",
-            title: '<i class="fas fa-users"> </i> &nbsp; ' + bbn.tasks.lng.roles,
+            title: '<i class="nf nf-fa-users"> </i> &nbsp; ' + bbn.tasks.lng.roles,
             content: $("#tpl-task_tab_roles").html(),
             static: true,
             callonce: function(ele){
@@ -932,7 +932,7 @@ $.extend(bbn.tasks, {
             disabled: !info.is_master()
           }, {
             url: "logs",
-            title: '<i class="fas fa-list"> </i> &nbsp; ' + bbn.tasks.lng.journal,
+            title: '<i class="nf nf-fa-list"> </i> &nbsp; ' + bbn.tasks.lng.journal,
             content: '<div class="tab-logs bbn-full-screen"></div>',
             static: true,
             callonce: function(ele){

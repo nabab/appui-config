@@ -15,7 +15,7 @@
       </div>
       <div class="bbn-block" style="margin: 0 2em">
         <button class="k-button bbn-xl" data-bind="click: create_task">
-          <i class="fas fa-flag-checkered"> </i> <?=_("Create a task")?>
+          <i class="nf nf-fa-flag_checkered"> </i> <?=_("Create a task")?>
         </button>
       </div>
     </div>
