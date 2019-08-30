@@ -7,7 +7,7 @@
 
     <div class="bbn-line-breaker bbn-task-form-container">
 
-      <div class="bbn-task-info-ppl k-widget">
+      <div class="bbn-task-info-ppl bbn-widget">
         <div class="bbn-block">
           <div class="bbn-block">
             <?=_("Created by")?><br>
@@ -29,7 +29,7 @@
       </div>
 
       <div class="bbn-form-full">
-        <input name="title" autocomplete="off" class="k-textbox bbn-lg title" placeholder="<?=_("Title/short description")?>" required="required" data-bind="value: title, events: {change: update, keydown: preventEnter}">
+        <input name="title" autocomplete="off" class="bbn-textbox bbn-lg title" placeholder="<?=_("Title/short description")?>" required="required" data-bind="value: title, events: {change: update, keydown: preventEnter}">
       </div>
 
       <div class="bbn-form-label"><?=_("Category")?></div>
@@ -140,7 +140,7 @@
           <?=_("Title")?><br>
         </div>
         <div class="bbn-form-field">
-          <input class="k-textbox" name="comment_title" style="width: 100%">
+          <input class="bbn-textbox" name="comment_title" style="width: 100%">
         </div>
 
         <div class="bbn-form-label">
@@ -155,14 +155,14 @@
           </select><br-->
         </div>
         <div class="bbn-form-field">
-          <textarea class="k-textbox" name="comment" style="width: 100%"></textarea>
+          <textarea class="bbn-textbox" name="comment" style="width: 100%"></textarea>
         </div>
 
         <div class="bbn-form-label"><?=_("Links")?></div>
         <div class="bbn-form-field">
-          <div class="k-widget k-upload k-header">
+          <div class="bbn-widget k-upload bbn-header">
             <div class="k-dropzone">
-              <input type="text" name="link" class="k-textbox" style="width: 100%" placeholder="<?=_("Type or paste your URL and press Enter to valid")?>">
+              <input type="text" name="link" class="bbn-textbox" style="width: 100%" placeholder="<?=_("Type or paste your URL and press Enter to valid")?>">
             </div>
             <table class="k-upload-files bbn-task-links-container">
             </table>
@@ -213,26 +213,26 @@
 
 <script type="text/x-kendo-template" id="tpl-task_tab_roles">
   <div class="bbn-margin bbn-task-roles-container">
-    <div class="k-content">
-      <div class="k-block bbn-task-assigned">
-        <div class="k-header"><?=_("Supervisors")?></div>
-        <div class="k-content bbn-task-managers">
+    <div class="bbn-content">
+      <div class="bbn-block bbn-task-assigned">
+        <div class="bbn-header"><?=_("Supervisors")?></div>
+        <div class="bbn-content bbn-task-managers">
           <input type="hidden" name="managers">
           <ul></ul>
         </div>
       </div>
       <div class="bbn-spacer"> </div>
-      <div class="k-block bbn-task-assigned">
-        <div class="k-header"><?=_("Workers")?></div>
-        <div class="k-content bbn-task-workers">
+      <div class="bbn-block bbn-task-assigned">
+        <div class="bbn-header"><?=_("Workers")?></div>
+        <div class="bbn-content bbn-task-workers">
           <input type="hidden" name="workers">
           <ul></ul>
       </div>
     </div>
     <div class="bbn-spacer"> </div>
-    <div class="k-block bbn-task-assigned">
-      <div class="k-header"><?=_("Spectators")?></div>
-        <div class="k-content bbn-task-viewers">
+    <div class="bbn-block bbn-task-assigned">
+      <div class="bbn-header"><?=_("Spectators")?></div>
+        <div class="bbn-content bbn-task-viewers">
           <input type="hidden" name="viewers">
           <ul></ul>
         </div>
@@ -263,7 +263,7 @@
 <script type="text/x-kendo-template" id="tpl-task_form_new">
 	<form method="post">
     <label class="bbn-form-label" for="appui_task_form_title"><?=_("Title")?></label>
-    <input id="appui_task_form_title" name="title" class="k-textbox bbn-form-field" maxlength="255" required="required" style="width: 100%">
+    <input id="appui_task_form_title" name="title" class="bbn-textbox bbn-form-field" maxlength="255" required="required" style="width: 100%">
 
     <label class="bbn-form-label" for="appui_task_form_type"><?=_("Type")?></label>
     <div class="bbn-form-field">

@@ -36,7 +36,7 @@ var $tree,
       }
     };
 if ( data.is_admin ){
-  $.extend(treeCfg, {
+  bbn.fn.extend(treeCfg, {
     dragAndDrop: true,
     drag: function(e){
       var dd = false,

@@ -6,7 +6,7 @@ var textarea = $("textarea", ele),
 kendo.bind(ele, {
   change_comment_type: function(){
     var type = $("select.comment_type", ele).data("kendoDropDownList").value(),
-        textarea_st = '<textarea class="k-textbox" name="comment"></textarea>',
+        textarea_st = '<textarea class="bbn-textbox" name="comment"></textarea>',
         text = textarea.val(),
         val;
 

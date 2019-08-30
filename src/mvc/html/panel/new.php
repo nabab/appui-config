@@ -5,7 +5,7 @@
   <div class="bbn-line-breaker bbn-task-form-container">
 
     <div class="bbn-form-full">
-      <input name="title" class="k-textbox bbn-lg title" placeholder="Title/short description of the new task" required="required">
+      <input name="title" class="bbn-textbox bbn-lg title" placeholder="Title/short description of the new task" required="required">
     </div>
 
     <div class="bbn-form-label">
@@ -20,7 +20,7 @@
       </select><br>
     </div>
     <div class="bbn-form-field">
-      <textarea class="k-textbox" name="comment" style="width: 100%"></textarea>
+      <textarea class="bbn-textbox" name="comment" style="width: 100%"></textarea>
     </div>
 
     <div class="bbn-form-label"><?=_("Category")?></div>
@@ -55,9 +55,9 @@
 
     <div class="bbn-form-label"><?=_("Links")?></div>
     <div class="bbn-form-field">
-      <div class="k-widget k-upload k-header">
+      <div class="bbn-widget k-upload bbn-header">
         <div class="k-dropzone">
-          <input type="text" name="link" class="k-textbox" style="width: 100%" placeholder="<?=_("Type or paste your URL and press Enter to valid")?>">
+          <input type="text" name="link" class="bbn-textbox" style="width: 100%" placeholder="<?=_("Type or paste your URL and press Enter to valid")?>">
         </div>
         <table class="k-upload-files bbn-task-links-container">
         </table>
@@ -65,28 +65,28 @@
     </div>
 
     <div class="bbn-form-full">
-      <div class="k-block">
-        <div class="k-header bbn-lg"><div><?=_("Roles")?></div></div>
-        <div class="k-content">
-          <div class="k-block bbn-task-assigned">
-            <div class="k-header"><?=_("Manager")?></div>
-            <div class="k-content bbn-task-managers">
+      <div class="bbn-block">
+        <div class="bbn-header bbn-lg"><div><?=_("Roles")?></div></div>
+        <div class="bbn-content">
+          <div class="bbn-block bbn-task-assigned">
+            <div class="bbn-header"><?=_("Manager")?></div>
+            <div class="bbn-content bbn-task-managers">
               <input type="hidden" name="managers">
               <ul></ul>
             </div>
           </div>
           <div class="bbn-spacer"> </div>
-          <div class="k-block bbn-task-assigned">
-            <div class="k-header"><?=_("Worker")?></div>
-            <div class="k-content bbn-task-doers">
+          <div class="bbn-block bbn-task-assigned">
+            <div class="bbn-header"><?=_("Worker")?></div>
+            <div class="bbn-content bbn-task-doers">
               <input type="hidden" name="doers">
               <ul></ul>
             </div>
           </div>
           <div class="bbn-spacer"> </div>
-          <div class="k-block bbn-task-assigned">
-            <div class="k-header"><?=_("Spectator")?></div>
-            <div class="k-content bbn-task-viewers">
+          <div class="bbn-block bbn-task-assigned">
+            <div class="bbn-header"><?=_("Spectator")?></div>
+            <div class="bbn-content bbn-task-viewers">
               <input type="hidden" name="viewers">
               <ul></ul>
             </div>

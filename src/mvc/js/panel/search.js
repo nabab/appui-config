@@ -9,7 +9,7 @@ $(".bbn-task-splitter", ele).kendoSplitter({
 });
 
 var operators = kendo.ui.FilterCell.fn.options.operators,
-    gant_container = $("div.bbn-task-gantt", ele),
+    gant_container = $("div.bbn-task-le),
     ds = new kendo.data.DataSource({
       serverFiltering: true,
       serverSorting: true,
@@ -43,11 +43,11 @@ var operators = kendo.ui.FilterCell.fn.options.operators,
           var myData = {
                 selection: $("select[name=selection]", ele).data("kendoDropDownList").value()
               },
-              v = $(".bbn-task-search-container input[name=title]", ele).val();
+              v = $(".bbn-task-ntainer input[name=title]", ele).val();
           if ( v ){
             myData.title = v;
           }
-          bbn.fn.post(data.root + 'treelist', $.extend(myData, e.data), function(d){
+          bbn.fn.post(data.root + 'treelist', bbn.fn.extend(myData, e.data), function(d){
             if ( d && d.tasks ){
               e.success(d.tasks);
             }
@@ -170,11 +170,11 @@ gant_container.kendoGrid({
         var icon,
             color;
         if ( e.state === bbn.tasks.states.opened ){
-          icon = 'clock-o';
+          icon = 'clock-
           color = 'white';
         }
         else if ( e.state === bbn.tasks.states.pending ){
-          icon = 'clock-o';
+          icon = 'clock-
           color = 'red';
         }
         else if ( e.state === bbn.tasks.states.ongoing ){
@@ -335,7 +335,7 @@ gant_container.kendoGrid({
       sortable: false,
       width: 50,
       template: function(e){
-        return '<a href="' + data.root + 'tasks/' + e.id + '" title="' + bbn.tasks.lng.see_task + '"><button class="k-button"><i class="nf nf-fa-eye"> </i></button></a>';
+        return '<a href="' + data.root + 'tasks/' + e.id + '" title="' + bbn.tasks.lng.see_task + '"><button class="k-i class="nf nf-fa-eye"> </i></button></a>';
       }
     }/*, {
       field: "id_parent",
@@ -361,7 +361,7 @@ $(ele).closest(".ui-tabNav").tabNav("addCallback", function(cont){
 }, ele);
 
 var timer;
-$(".bbn-task-search-container input[name=title]", ele).keyup(function(e){
+$(".bbn-task-ntainer input[name=title]", ele).keyup(function(e){
   if ( timer ){
     clearTimeout(timer);
   }

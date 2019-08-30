@@ -15,13 +15,13 @@ if ( isset($model->data['url'], $model->data['ref']) && \bbn\str::is_url($model-
     if ( $parserName === 'general' ){
       $r = [
         'url' => $link->getUrl(),
-        'realurl' => $link->getRealUrl(),
-        'title' => $link->getPageTitle(),
-        'desc' => $link->getDescription(),
+        'realurl' => $link-rl(),
+        'title' => $link-itle(),
+        'desc' => $link-iption(),
         'pictures' => []
       ];
-      $img = $link->getImage();
-      $pictures = $link->getPictures();
+      $img = $link-();
+      $pictures = $link-res();
       if ( !is_array($pictures) ){
         $pictures = [];
       }

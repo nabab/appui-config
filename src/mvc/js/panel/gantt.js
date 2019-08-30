@@ -36,15 +36,15 @@ $("div.bbn-task-gantt", ele).kendoTreeList({
     refresh: true
   },
   dataBound: function(e){
-    $(e.sender.element).find("tbody tr[class*='bbn-task-pr']").each(function(){
+    $(e.sender.element).find("tbody tr[class*='bbn-task-ch(function(){
       var $$ = $(this);
       for ( var i = 1; i <= 10; i++ ){
-        $$.removeClass("bbn-task-pr" + i);
+        $$.removeClass("bbn-task-
       }
     });
     $(e.sender.element).find("tbody tr").each(function(){
       var dataItem = e.sender.dataItem(this);
-      $(this).addClass("bbn-task-pr" + dataItem.get("priority"));
+      $(this).addClass("bbn-task-aItem.get("priority"));
       bbn.fn.log("Adding class");
     })
   },
@@ -111,7 +111,7 @@ $("div.bbn-task-gantt", ele).kendoTreeList({
       title: " ",
       width: 50,
       template: function(e){
-        return '<a href="' + data.root + 'projects/' + e.id + '" title="' + data.lng.see_task + '"><button class="k-button"><i class="nf nf-fa-eye"> </i></button></a>';
+        return '<a href="' + data.root + 'projects/' + e.id + '" title="' + data.lng.see_task + '"><button class="k-i class="nf nf-fa-eye"> </i></button></a>';
       }
     }
   ]

@@ -1,5 +1,5 @@
 // Javascript Document
-//$(ele).closest(".k-content").css("padding", "0px");
+//$(ele).closest(".bbn-content").css("padding", "0px");
 
 // Main tabNav
 var tabnav = $("#appui_task_tabnav").tabNav({
@@ -28,7 +28,7 @@ $.each(data.groups, function(i, v){
 });
 
 // All the following vars will be always accessible
-$.extend(bbn.tasks, {
+bbn.fn.extend(bbn.tasks, {
   priority_colors: ['#F00', '#F40', '#F90', '#FC0', '#9B3', '#7A4', '#5A5', '#396', '#284', '#063'],
   // Translations
   lng: data.lng,
@@ -321,7 +321,7 @@ $.extend(bbn.tasks, {
               /** @todo It is not used but maybe think about redoing the comment part */
               change_comment_type: function(){
                 var type = $("select.comment_type", ele).data("kendoDropDownList").value(),
-                    textarea_st = '<textarea class="k-textbox" name="comment"></textarea>',
+                    textarea_st = '<textarea class="bbn-textbox" name="comment"></textarea>',
                     text = textarea.val(),
                     val;
 
@@ -419,7 +419,7 @@ $.extend(bbn.tasks, {
             }
             return obs;
           };
-      $.extend(app, {
+      bbn.fn.extend(app, {
         mainInit: false,
         roleInit: false,
         logsInit: false,
@@ -933,7 +933,7 @@ $.extend(bbn.tasks, {
           }, {
             url: "logs",
             title: '<i class="nf nf-fa-list"> </i> &nbsp; ' + bbn.tasks.lng.journal,
-            content: '<div class="tab-logs bbn-full-screen"></div>',
+            content: '<div class="tab-logs bbn-overlay"></div>',
             static: true,
             callonce: function(ele){
               app.logsView();
