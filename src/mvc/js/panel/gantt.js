@@ -2,7 +2,7 @@
 var ds = new kendo.data.TreeListDataSource({
   transport: {
     read: function(e){
-      bbn.fn.post(data.root + 'treelist', e.data ? e.data : {}, function(d){
+      this.post(data.root + 'treelist', e.data ? e.data : {}, function(d){
         if ( d && d.tasks ){
           e.success(d.tasks);
         }

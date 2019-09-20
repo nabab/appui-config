@@ -5,7 +5,7 @@ var $tree,
       filterable: true,
       transport: {
         read: function(e){
-          bbn.fn.post(data.root + "tree/" + (e.data.id ? e.data.id : data.cat), function(d){
+          this.post(data.root + "tree/" + (e.data.id ? e.data.id : data.cat), function(d){
             $.each(d.data, function(i, v){
               d.data[i].text = v.text.toString();
               d.data[i].is_parent = v.num_children > 0 ? true : false;
@@ -74,7 +74,7 @@ if ( data.is_admin ){
             prev = $(e.sourceNode).prev(),
             parent = $(e.sourceNode).parent();
         bbn.fn.log(e);
-        bbn.fn.post(data.root + 'actions/move', {
+        this.post(data.root + 'actions/move', {
           dest: dd.id,
           src: ds.id
         }, function(d){

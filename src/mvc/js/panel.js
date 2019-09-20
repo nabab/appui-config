@@ -43,7 +43,7 @@ bbn.fn.extend(bbn.tasks, {
   // Function on the media links in the comments of the task main view
   download_media: function(id){
     if ( id ){
-      bbn.fn.post_out(data.root + 'download/media/' + id);
+      this.post_out(data.root + 'download/media/' + id);
     }
   },
   // Form creating a new task
@@ -146,7 +146,7 @@ bbn.fn.extend(bbn.tasks, {
                 var mvvm = this,
                     role = $(e.item).attr("data-task-role");
                 if ( role && bbn.tasks.roles[role] ){
-                  bbn.fn.post(data.root + 'actions/role/insert', {id_task: info.id, role: bbn.tasks.roles[role], id_user: appui.app.user.id}, function(d){
+                  this.post(data.root + 'actions/role/insert', {id_task: info.id, role: bbn.tasks.roles[role], id_user: appui.app.user.id}, function(d){
                     if ( app.userUID ){
                       // @todo Do something to update the roles tab
                       app.tree.findByUid(app.userUID);
@@ -173,7 +173,7 @@ bbn.fn.extend(bbn.tasks, {
                 }
                 if ( prop ){
                   appui.confirm(bbn.tasks.lng.sure_to_unfollow, function(){
-                    bbn.fn.post(data.root + "actions/role/delete", {id_task: info.id, id_user: appui.app.user.id, role: bbn.tasks.roles[prop]}, function(d){
+                    this.post(data.root + "actions/role/delete", {id_task: info.id, id_user: appui.app.user.id, role: bbn.tasks.roles[prop]}, function(d){
                       var idx = $.inArray(appui.app.user.id, mvvm.roles.get(prop))
                       if ( idx > -1 ){
                         mvvm.roles[prop].splice(idx, 1);
@@ -207,7 +207,7 @@ bbn.fn.extend(bbn.tasks, {
               close: function(){
                 var mvvm = this;
                 appui.confirm(bbn.tasks.lng.sure_to_close, function(){
-                  bbn.fn.post(data.root + "actions/task/update", {id_task: info.id, prop: "state", val: bbn.tasks.states.closed}, function(d){
+                  this.post(data.root + "actions/task/update", {id_task: info.id, prop: "state", val: bbn.tasks.states.closed}, function(d){
                     if ( d.success ){
                       mvvm.set("state", bbn.tasks.states.closed);
                     }
@@ -223,7 +223,7 @@ bbn.fn.extend(bbn.tasks, {
               hold: function(e){
                 var mvvm = this;
                 appui.confirm(bbn.tasks.lng.sure_to_hold, function(){
-                  bbn.fn.post(data.root + "actions/task/update", {id_task: info.id, prop: "state", val: bbn.tasks.states.holding}, function(d){
+                  this.post(data.root + "actions/task/update", {id_task: info.id, prop: "state", val: bbn.tasks.states.holding}, function(d){
                     if ( d.success ){
                       mvvm.set("state", bbn.tasks.states.holding);
                     }
@@ -239,7 +239,7 @@ bbn.fn.extend(bbn.tasks, {
               resume: function(e){
                 var mvvm = this;
                 appui.confirm(bbn.tasks.lng.sure_to_resume, function(){
-                  bbn.fn.post(data.root + "actions/task/update", {id_task: info.id, prop: "state", val: bbn.tasks.states.ongoing}, function(d){
+                  this.post(data.root + "actions/task/update", {id_task: info.id, prop: "state", val: bbn.tasks.states.ongoing}, function(d){
                     if ( d.success ){
                       mvvm.set("state", bbn.tasks.states.ongoing);
                     }
@@ -287,7 +287,7 @@ bbn.fn.extend(bbn.tasks, {
                   appui.alert(bbn.tasks.lng.no_comment_text)
                 }
                 else{
-                  bbn.fn.post(data.root + 'actions/comment/insert', v, function(d){
+                  this.post(data.root + 'actions/comment/insert', v, function(d){
                     if ( d.success && d.comment ){
                       d.comment.creation = new Date().getSQL(1);
                       var m = new moment(d.comment.creation);
@@ -599,7 +599,7 @@ bbn.fn.extend(bbn.tasks, {
               bbn.fn.analyzeContent($target, 1);
               $input.val("");
               $li = $target.find("tr:last").parent().closest("tr");
-              bbn.fn.post(data.root + "link_preview", {url: v, ref: info.ref}, function(d){
+              this.post(data.root + "link_preview", {url: v, ref: info.ref}, function(d){
                 if ( d.res && d.res.realurl ){
                   $li.find("td.k-file").removeClass("k-file-progress").addClass("k-file-success");
                   if ( d.res.pictures ){
@@ -768,7 +768,7 @@ bbn.fn.extend(bbn.tasks, {
               },
               transport: {
                 read: function(e){
-                  bbn.fn.post(data.root + 'panel/logs', {id_task: info.id}, function(d){
+                  this.post(data.root + 'panel/logs', {id_task: info.id}, function(d){
                     if ( d.data ){
                       return e.success(d.data);
                     }
@@ -843,7 +843,7 @@ bbn.fn.extend(bbn.tasks, {
               v.push(id);
               $input.val(JSON.stringify(info.roles[prop].toJSON()));
               if ( insert ){
-                bbn.fn.post(data.root + 'actions/role/insert', {id_task: info.id, role: prop, id_user: id}, function(d){
+                this.post(data.root + 'actions/role/insert', {id_task: info.id, role: prop, id_user: id}, function(d){
                   if ( !d.success ){
                     appui.alert();
                   }
@@ -871,7 +871,7 @@ bbn.fn.extend(bbn.tasks, {
                   var idx = $.inArray(id, info.roles.get(prop));
                   bbn.fn.log("remove", idx, id, info.roles.get(prop), prop);
                   if ( (idx > -1) ){
-                    bbn.fn.post(data.root + 'actions/role/delete', {id_task: info.id, role: prop, id_user: id}, function(d){
+                    this.post(data.root + 'actions/role/delete', {id_task: info.id, role: prop, id_user: id}, function(d){
                       if ( !d.success ){
                         appui.alert();
                       }
@@ -893,7 +893,7 @@ bbn.fn.extend(bbn.tasks, {
           if ( prop === 'deadline' ){
             val = kendo.toString(val,"yyyy-MM-dd");
           }
-          bbn.fn.post(data.root + 'actions/task/update', {
+          this.post(data.root + 'actions/task/update', {
             id_task: info.id,
             prop: prop,
             val: val

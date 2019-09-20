@@ -47,7 +47,7 @@ var operators = kendo.ui.FilterCell.fn.options.operators,
           if ( v ){
             myData.title = v;
           }
-          bbn.fn.post(data.root + 'treelist', bbn.fn.extend(myData, e.data), function(d){
+          this.post(data.root + 'treelist', bbn.fn.extend(myData, e.data), function(d){
             if ( d && d.tasks ){
               e.success(d.tasks);
             }

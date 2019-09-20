@@ -80,7 +80,7 @@ kendo.bind(ele, {
         role = rolePicker.value(),
         frole = bbn.fn.get_field(dataItem.roles, "value", role, "text");
     if ( frole && ($.inArray(dataItem.users, id_user) === -1) ){
-      bbn.fn.post("usergroup/get_user", {id_user: id_user}, function(d){
+      this.post("usergroup/get_user", {id_user: id_user}, function(d){
         if ( d.res ){
           dataItem.users.push(id_user);
           rolePicker.value("");
@@ -427,7 +427,7 @@ $("input[name=link]", ele).keydown(function(e){
     $target.bbn("redraw", true);
     $input.val("");
     $li = $target.find("tr:last").parent().closest("tr");
-    bbn.fn.post(data.root + "link_preview", {url: v, ref: data.ref}, function(d){
+    this.post(data.root + "link_preview", {url: v, ref: data.ref}, function(d){
       if ( d.res && d.res.realurl ){
         bbn.fn.log("ok", d.res);
         $li.find("td.k-file").removeClass("k-file-progress").addClass("k-file-success");
