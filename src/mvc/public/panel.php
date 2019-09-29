@@ -10,7 +10,7 @@
 
 /*
 if ( $ctrl->get_url() === $ctrl->obj->url ){
-  $ctrl->obj->current = $ctrl->say_dir().'/projects/ongoing';
+  $ctrl->obj->current = $ctrl->get_dir().'/projects/ongoing';
 }
 $new = $ctrl->add('./new');
 if ( $obj = $new->get() ){
@@ -28,7 +28,7 @@ if ( empty($ctrl->post['appui_baseURL']) ){
   $ctrl->combo('<i class="nf nf-fa-bug"> </i> &nbsp; '._("Projects"), true);
   $ctrl->obj->bcolor = '#000000';
   $ctrl->obj->fcolor = '#FFFFFF';
-  $ctrl->obj->url = $ctrl->say_dir();
+  $ctrl->obj->url = $ctrl->get_dir();
 }
 else if ( !empty($ctrl->arguments) ){
   $controller = $ctrl->add('./'.implode($ctrl->arguments, '/'), \bbn\x::merge_arrays($ctrl->data, $ctrl->post), true);
@@ -41,4 +41,4 @@ else if ( !empty($ctrl->arguments) ){
 $ctrl->combo('<i class="nf nf-fa-bug"> </i> &nbsp; '._("Projects"), true);
 $ctrl->obj->bcolor = '#000000';
 $ctrl->obj->fcolor = '#FFFFFF';
-$ctrl->obj->url = $ctrl->say_path();
+$ctrl->obj->url = $ctrl->get_path();

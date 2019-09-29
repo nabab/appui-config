@@ -16,5 +16,5 @@
 // find ../../../mvc -iname "*.php" | xargs xgettext -d appui_task -j
 // msgfmt -o appui_task.mo appui_task.po
 
-$ctrl->data['root'] = $ctrl->say_dir().'/';
+$ctrl->data['root'] = $ctrl->get_dir().'/';
 return 1;
