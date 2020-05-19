@@ -78,7 +78,7 @@ kendo.bind(ele, {
         id_user = $("input[name=id_user]", ele).val(),
         rolePicker = $("input[name=role]", ele).data("kendoDropDownList"),
         role = rolePicker.value(),
-        frole = bbn.fn.get_field(dataItem.roles, "value", role, "text");
+        frole = bbn.fn.getField(dataItem.roles, "text", "value", role);
     if ( frole && ($.inArray(dataItem.users, id_user) === -1) ){
       this.post("usergroup/get_user", {id_user: id_user}, function(d){
         if ( d.res ){

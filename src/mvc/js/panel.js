@@ -196,7 +196,7 @@ bbn.fn.extend(bbn.tasks, {
                 return !this.is_closed() && this.is_master();
               },
               statef: function(){
-                return bbn.fn.get_field(bbn.tasks.options.states, "value", this.get("state"), "text");
+                return bbn.fn.getField(bbn.tasks.options.states, "text", "value", this.get("state"));
               },
               can_close: function(){
                 if ( this.is_manager() && !this.is_closed() ){
