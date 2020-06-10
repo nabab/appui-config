@@ -43,7 +43,7 @@ bbn.fn.extend(bbn.tasks, {
   // Function on the media links in the comments of the task main view
   download_media: function(id){
     if ( id ){
-      this.post_out(data.root + 'download/media/' + id);
+      this.postOut(data.root + 'download/media/' + id);
     }
   },
   // Form creating a new task
