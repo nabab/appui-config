@@ -3,6 +3,7 @@
  * Describe what it does to show you're not that dumb!
  *
  **/
+use bbn\x;
 
 /** @var $ctrl \bbn\mvc\controller */
 
@@ -31,7 +32,7 @@ if ( empty($ctrl->post['appui_baseURL']) ){
   $ctrl->obj->url = $ctrl->get_dir();
 }
 else if ( !empty($ctrl->arguments) ){
-  $controller = $ctrl->add('./'.implode($ctrl->arguments, '/'), \bbn\x::merge_arrays($ctrl->data, $ctrl->post), true);
+  $controller = $ctrl->add('./'.implode($ctrl->arguments, '/'), x::merge_arrays($ctrl->data, $ctrl->post), true);
   $ctrl->obj = $controller->get();
   if ( !isset($ctrl->obj->url) ){
     $ctrl->obj->url = implode($ctrl->arguments, '/');
