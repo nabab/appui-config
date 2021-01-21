@@ -6,17 +6,17 @@
 
 /** @var $model \bbn\mvc\model*/
 $s =& $model->inc->session;
-$pm = new \bbn\appui\tasks($model->db);
+$pm = new \bbn\appui\task($model->db);
 return [
   'root' => $model->data['root'],
-  'roles' => \bbn\appui\tasks::get_options_ids('roles'),
-  'states' => \bbn\appui\tasks::get_options_ids('states'),
+  'roles' => \bbn\appui\task::get_options_ids('roles'),
+  'states' => \bbn\appui\task::get_options_ids('states'),
   'options' => [
-    'states' => \bbn\appui\tasks::get_options_text_value('states'),
-    'roles' => \bbn\appui\tasks::get_options_text_value('roles'),
-    'cats' => \bbn\appui\tasks::cat_correspondances()
+    'states' => \bbn\appui\task::get_options_text_value('states'),
+    'roles' => \bbn\appui\task::get_options_text_value('roles'),
+    'cats' => \bbn\appui\task::cat_correspondances()
   ],
-  'categories' => \bbn\appui\tasks::get_options_tree('cat'),
+  'categories' => \bbn\appui\task::get_options_tree('cat'),
   'lng' => [
     'title' => _("Title"),
     'type' => _("Type"),
