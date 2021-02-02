@@ -29,12 +29,12 @@
       </div>
 
       <div class="bbn-form-full">
-        <input name="title" autocomplete="off" class="bbn-textbox bbn-lg title" placeholder="<?=_("Title/short description")?>" required="required" data-bind="value: title, events: {change: update, keydown: preventEnter}">
+        <input name="title" autocomplete="off" class="bbn-textbox bbn-lg title" placeholder="<?=_("Title/short description")?>" required="required" data-bind="value: title, Events: {change: update, keydown: preventEnter}">
       </div>
 
       <div class="bbn-form-label"><?=_("Category")?></div>
       <div class="bbn-form-field">
-        <input name="type" style="width: 500px" required="required" data-bind="value: type, events: {change: update}">
+        <input name="type" style="width: 500px" required="required" data-bind="value: type, Events: {change: update}">
       </div>
 
       <div class="bbn-form-label"><?=_("Priority")?></div>
@@ -42,7 +42,7 @@
 
         <div class="bbn-form-label" style="width: 140px">
           <div class="bbn-block">
-            <select data-role="dropdownlist" data-bind="value: priority, events: {change: update}" name="priority" style="width: 80px">
+            <select data-role="dropdownlist" data-bind="value: priority, Events: {change: update}" name="priority" style="width: 80px">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -59,7 +59,7 @@
 
           <div class="bbn-form-label" style="width: 140px"><?=_("Deadline")?></div>
           <div class="bbn-form-field">
-            <input type="date" data-role="datepicker" name="deadline" data-bind="value: deadline, events: {keydown: preventAll, change: update}" data-format="yyyy-MM-dd">
+            <input type="date" data-role="datepicker" name="deadline" data-bind="value: deadline, Events: {keydown: preventAll, change: update}" data-format="yyyy-MM-dd">
             <button class="k-button" data-bind="visible: has_deadline, click: remove_deadline">
               <i class="nf nf-fa-times"></i>
             </button>
@@ -69,7 +69,7 @@
       </div>
 
       <div class="bbn-form-label" data-bind="visible: reference"><?=_("External reference")?></div>
-      <div class="bbn-form-field" data-bind="visible: reference, html: reference"></div>
+      <div class="bbn-form-field" data-bind="visible: reference, Html: reference"></div>
 
       <div class="bbn-form-label bbn-lg" class="bbn-task-actions"><em data-bind="text: statef"></em></div>
       <div class="bbn-form-field bbn-lg" class="bbn-task-actions">
@@ -196,9 +196,9 @@
           5 Faves
         </div>-->
       </div>
-      <div class="title bbn-lg" data-bind="visible: title, html: title"></div>
+      <div class="title bbn-lg" data-bind="visible: title, Html: title"></div>
       <div class="text">
-        <div data-bind="visible: content, html: content"></div>
+        <div data-bind="visible: content, Html: content"></div>
         <p data-bind="source: medias" data-template="tpl-appui_task_media"></p>
   		</div>
     </div>

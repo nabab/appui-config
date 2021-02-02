@@ -4,10 +4,10 @@
  *
  **/
 
-/** @var $model \bbn\mvc\model*/
+/** @var $model \bbn\Mvc\Model*/
 if ( isset($model->data['id']) ){
-  $task = new \bbn\appui\task($model->db);
+  $task = new \bbn\Appui\Task($model->db);
   //$statuses = empty($model->data['closed']) ? 'opened|ongoing|holding' : false;
-  return $task->get_tree($model->data['id']);
+  return $task->getTree($model->data['id']);
 }
 return [];

@@ -4,9 +4,9 @@
  *
  **/
 
-/** @var $ctrl \bbn\mvc\controller */
+/** @var $ctrl \bbn\Mvc\Controller */
 if ( !isset($ctrl->post['id']) ){
-  echo $ctrl->set_title('<i class="nf nf-fa-clock"> </i> &nbsp; _("Mes tâches en cours")')->add_js([
+  echo $ctrl->setTitle('<i class="nf nf-fa-clock"> </i> &nbsp; _("Mes tâches en cours")')->addJs([
     'root' => $ctrl->data['root'],
     'lng' => [
       'title' => _("Title"),
@@ -19,8 +19,8 @@ if ( !isset($ctrl->post['id']) ){
       'deadline' => _("Deadline"),
       'see_task' => _("See task")
     ]
-  ])->get_view();
+  ])->getView();
 }
 else{
-  $ctrl->obj->tasks = $ctrl->get_model($ctrl->post);
+  $ctrl->obj->tasks = $ctrl->getModel($ctrl->post);
 }

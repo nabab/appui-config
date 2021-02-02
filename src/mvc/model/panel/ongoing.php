@@ -4,6 +4,6 @@
  *
  **/
 
-/** @var $model \bbn\mvc\model*/
-$pm = new \bbn\appui\task($model->db);
-return $pm->get_mine(empty($model->data['id']) ? null : $model->data['id']);
+/** @var $model \bbn\Mvc\Model*/
+$pm = new \bbn\Appui\Task($model->db);
+return $pm->getMine(empty($model->data['id']) ? null : $model->data['id']);

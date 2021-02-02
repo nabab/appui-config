@@ -4,8 +4,8 @@
  *
  **/
 
-/** @var $ctrl \bbn\mvc\controller */
-echo $ctrl->set_title("Gantt")->add_js([
+/** @var $ctrl \bbn\Mvc\Controller */
+echo $ctrl->setTitle("Gantt")->addJs([
   'root' => $ctrl->data['root'],
   'lng' => [
     'priority' => _("Priority"),
@@ -17,4 +17,4 @@ echo $ctrl->set_title("Gantt")->add_js([
     'last' => _("Last"),
     'title' => _("Title")
   ]
-])->get_view();
+])->getView();

@@ -4,9 +4,9 @@
  *
  **/
 
-/** @var $model \bbn\mvc\model*/
-$pm = new \bbn\appui\task($model->db);
-$grid = new \bbn\appui\grid($model->db, $model->data, 'bbn_tasks', [
+/** @var $model \bbn\Mvc\Model*/
+$pm = new \bbn\Appui\Task($model->db);
+$grid = new \bbn\Appui\Grid($model->db, $model->data, 'bbn_tasks', [
   'reference',
   'role',
   'last_action'
@@ -59,10 +59,10 @@ if ( !empty($model->data['sort']) ){
 }
 if ( isset($model->data['selection']) ){
   if ( $model->data['selection'] === 'user' ){
-    array_push($res, ['my_user', '=', $model->inc->user->get_id()]);
+    array_push($res, ['my_user', '=', $model->inc->user->getId()]);
   }
   else if ( $model->data['selection'] === 'group' ){
-    array_push($res, ['my_group', '=', $model->inc->user->get_group()]);
+    array_push($res, ['my_group', '=', $model->inc->user->getGroup()]);
   }
 }
 return $pm->search($res, $sort, $model->data['skip'] ?? 0, $model->data['take'] ?? 25);

@@ -4,9 +4,9 @@
  *
  **/
 
-/** @var $model \bbn\mvc\model*/
+/** @var $model \bbn\Mvc\Model*/
 if ( isset($model->data['id_task']) ){
-	$pm = new \bbn\appui\task($model->db);
-  return $pm->get_log($model->data['id_task']);
+	$pm = new \bbn\Appui\Task($model->db);
+  return $pm->getLog($model->data['id_task']);
 }
 return [];

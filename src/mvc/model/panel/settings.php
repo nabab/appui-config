@@ -4,5 +4,5 @@
  *
  **/
 
-/** @var $model \bbn\mvc\model*/
-return ['cats' => \bbn\appui\task::get_cats()];
+/** @var $model \bbn\Mvc\Model*/
+return ['cats' => \bbn\Appui\Task::get_cats()];

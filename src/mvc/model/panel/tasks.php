@@ -4,9 +4,9 @@
  *
  **/
 
-/** @var $model \bbn\mvc\model*/
+/** @var $model \bbn\Mvc\Model*/
 if ( isset($model->data['id']) ){
-  $task = new \bbn\appui\task($model->db);
+  $task = new \bbn\Appui\Task($model->db);
   return [
     'info' => $task->info($model->data['id'], true)
   ];

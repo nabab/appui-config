@@ -4,7 +4,7 @@
  *
  **/
 
-/** @var $ctrl \bbn\mvc\controller */
+/** @var $ctrl \bbn\Mvc\Controller */
 
 // cd ~/_lib/vendor/bbn/bbn-task/src
 // find . -iname "*.php" | xargs xgettext
@@ -16,5 +16,5 @@
 // find ../../../mvc -iname "*.php" | xargs xgettext -d appui_task -j
 // msgfmt -o appui_task.mo appui_task.po
 
-$ctrl->data['root'] = $ctrl->get_dir().'/';
+$ctrl->data['root'] = $ctrl->getDir().'/';
 return 1;

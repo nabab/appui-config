@@ -4,19 +4,19 @@
  *
  **/
 
-/** @var $model \bbn\mvc\model*/
+/** @var $model \bbn\Mvc\Model*/
 $s =& $model->inc->session;
-$pm = new \bbn\appui\task($model->db);
+$pm = new \bbn\Appui\Task($model->db);
 return [
   'root' => $model->data['root'],
-  'roles' => \bbn\appui\task::get_options_ids('roles'),
-  'states' => \bbn\appui\task::get_options_ids('states'),
+  'roles' => \bbn\Appui\Task::getOptionsIds('roles'),
+  'states' => \bbn\Appui\Task::getOptionsIds('states'),
   'options' => [
-    'states' => \bbn\appui\task::get_options_text_value('states'),
-    'roles' => \bbn\appui\task::get_options_text_value('roles'),
-    'cats' => \bbn\appui\task::cat_correspondances()
+    'states' => \bbn\Appui\Task::getOptionsTextValue('states'),
+    'roles' => \bbn\Appui\Task::getOptionsTextValue('roles'),
+    'cats' => \bbn\Appui\Task::catCorrespondances()
   ],
-  'categories' => \bbn\appui\task::get_options_tree('cat'),
+  'categories' => \bbn\Appui\Task::getOptionsTree('cat'),
   'lng' => [
     'title' => _("Title"),
     'type' => _("Type"),
@@ -62,7 +62,7 @@ return [
       $a['expanded'] = false;
     }
     return $a;
-  }, $model->get_model('usergroup/picker')),
+  }, $model->getModel('usergroup/picker')),
   'categories' => $model->inc->options->map(function($a){
     $a['is_parent'] = !empty($a['items']);
     if ( $a['is_parent'] ){

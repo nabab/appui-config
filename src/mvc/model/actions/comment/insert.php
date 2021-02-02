@@ -4,9 +4,9 @@
  *
  **/
 
-/** @var $model \bbn\mvc\model*/
+/** @var $model \bbn\Mvc\Model*/
 if ( isset($model->data['id']) ){
-  $pm = new \bbn\appui\task($model->db);
+  $pm = new \bbn\Appui\Task($model->db);
   $res = $pm->comment($model->data['id'], [
     'files' => !empty($model->data['files']) ? $model->data['files'] : false,
     'title' => isset($model->data['title']) ? $model->data['title'] : '',
@@ -14,6 +14,6 @@ if ( isset($model->data['id']) ){
   ]);
   return [
     'success' => $res,
-    'comment' => $pm->get_comment($model->data['id'], $res)
+    'comment' => $pm->getComment($model->data['id'], $res)
   ];
 }

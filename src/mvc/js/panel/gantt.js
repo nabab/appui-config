@@ -111,7 +111,10 @@ $("div.bbn-task-gantt", ele).kendoTreeList({
       title: " ",
       width: 50,
       template: function(e){
-        return '<a href="' + data.root + 'projects/' + e.id + '" title="' + data.lng.see_task + '"><button class="k-i class="nf nf-fa-eye"> </i></button></a>';
+        return '<a href="' + data.root 
+            + appui.plugins['appui-project'] + '/' 
+            + e.id + '" title="' + data.lng.see_task 
+            + '"><button class="k-i class="nf nf-fa-eye"> </i></button></a>';
       }
     }
   ]

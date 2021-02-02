@@ -4,5 +4,5 @@
  *
  **/
 
-/** @var $ctrl \bbn\mvc\controller */
-$ctrl->obj->tasks = $ctrl->get_model($ctrl->post);
+/** @var $ctrl \bbn\Mvc\Controller */
+$ctrl->obj->tasks = $ctrl->getModel($ctrl->post);
