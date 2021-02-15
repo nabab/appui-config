@@ -37,7 +37,7 @@ if ( isset($model->data['url'], $model->data['ref']) && \bbn\Str::isUrl($model->
           $img = new \bbn\File\Image($path.$root.'/'.$new);
           if ( $img->test() && ($imgs = $img->thumbs($path.$root)) ){
             array_push($r['pictures'], array_map(function($a) use($path){
-              return substr($a, Strlen($path));
+              return substr($a, strlen($path));
             }, $imgs));
           }
         }

@@ -62,7 +62,7 @@ return [
       $a['expanded'] = false;
     }
     return $a;
-  }, $model->getModel('usergroup/picker')),
+  }, $model->getModel($model->plugin_url('appui-usergroup').'/picker')),
   'categories' => $model->inc->options->map(function($a){
     $a['is_parent'] = !empty($a['items']);
     if ( $a['is_parent'] ){

@@ -70,7 +70,7 @@ kendo.bind(ele, {
   change_role: function(){
     var role = $("input[name=role]", ele).data("kendoDropDownList").value();
     if ( role ){
-      bbn.fn.window("usergroup/picker", {picker: "#appui_pm_form_container input[name=id_user]"}, 350, 700);
+      bbn.fn.window(appui.plugins['appui-usergroup'] + "/picker", {picker: "#appui_pm_form_container input[name=id_user]"}, 350, 700);
     }
   },
   add_user: function(){
@@ -80,7 +80,7 @@ kendo.bind(ele, {
         role = rolePicker.value(),
         frole = bbn.fn.getField(dataItem.roles, "text", "value", role);
     if ( frole && ($.inArray(dataItem.users, id_user) === -1) ){
-      this.post("usergroup/get_user", {id_user: id_user}, function(d){
+      this.post(appui.plugins['appui-usergroup'] + "/get_user", {id_user: id_user}, function(d){
         if ( d.res ){
           dataItem.users.push(id_user);
           rolePicker.value("");

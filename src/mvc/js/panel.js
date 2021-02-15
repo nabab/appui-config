@@ -399,7 +399,7 @@ bbn.fn.extend(bbn.tasks, {
               change_role: function(){
                 var role = $("input[name=role]", ele).data("kendoDropDownList").value();
                 if ( role ){
-                  bbn.fn.window("usergroup/picker", {picker: "#appui_pm_form_container input[name=id_user]"}, 350, 700);
+                  bbn.fn.window(appui.plugins['appui-usergroup'] + "/picker", {picker: "#appui_pm_form_container input[name=id_user]"}, 350, 700);
                 }
               },
               update: function(e, f){
