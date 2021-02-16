@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: info@bbn.so\n"
 "last-Translator: BBN Solutions <support@bbn.solutions>\n"
-"Language-Team: ES <ES@li.org>\n"
+"Language-Team: IT <IT@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-02-16 15:11+0100\n"
-"POT-Revision-Date: 2021-02-16 15:11+0100\n"
-"Language: es\n"
+"POT-Creation-Date: 2021-02-16 17:29+0100\n"
+"POT-Revision-Date: 2021-02-16 17:29+0100\n"
+"Language: it\n"
 "X-Domain: appui-config\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
@@ -260,7 +260,7 @@ msgstr ""
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/gantt.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/ongoing.php
 msgid "Duration"
-msgstr ""
+msgstr "Durata"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/lng/search.php
@@ -314,7 +314,7 @@ msgstr ""
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/search.php
 msgid "Search"
-msgstr ""
+msgstr "Ricerca"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Soon"
@@ -346,19 +346,19 @@ msgstr ""
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "User"
-msgstr ""
+msgstr "Utente"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Action"
-msgstr ""
+msgstr "Azione"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Global view"
-msgstr ""
+msgstr "Vista globale"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Events journal"
@@ -386,7 +386,7 @@ msgstr ""
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel.php
 msgid "Projects"
-msgstr ""
+msgstr "Progetti"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/settings.php
 msgid "Settings"

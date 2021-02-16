@@ -3,40 +3,40 @@ msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: info@bbn.so\n"
 "last-Translator: BBN Solutions <support@bbn.solutions>\n"
-"Language-Team: IT <IT@li.org>\n"
+"Language-Team: EN <EN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-02-16 15:11+0100\n"
-"POT-Revision-Date: 2021-02-16 15:11+0100\n"
-"Language: it\n"
+"POT-Creation-Date: 2021-02-16 17:29+0100\n"
+"POT-Revision-Date: 2021-02-16 17:29+0100\n"
+"Language: en\n"
 "X-Domain: appui-config\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Created by"
-msgstr ""
+msgstr "Created by"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "On"
-msgstr ""
+msgstr "On"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Assigned to"
-msgstr ""
+msgstr "Assigned to"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Supervised by"
-msgstr ""
+msgstr "Supervised by"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Title/short description"
-msgstr ""
+msgstr "Title/short description"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
 msgid "Category"
-msgstr ""
+msgstr "Category"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
@@ -44,7 +44,7 @@ msgstr ""
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/lng/search.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/gantt.php
 msgid "Priority"
-msgstr ""
+msgstr "Priority"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
@@ -52,60 +52,60 @@ msgstr ""
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/lng/search.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/ongoing.php
 msgid "Deadline"
-msgstr ""
+msgstr "Deadline"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "External reference"
-msgstr ""
+msgstr "External reference"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Put on hold"
-msgstr ""
+msgstr "Put on hold"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Resume"
-msgstr ""
+msgstr "Resume"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Close"
-msgstr ""
+msgstr "Close"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Make me a supervisor"
-msgstr ""
+msgstr "Make me a supervisor"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Make me a worker"
-msgstr ""
+msgstr "Make me a worker"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Make me a viewer"
-msgstr ""
+msgstr "Make me a viewer"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Ping workers"
-msgstr ""
+msgstr "Ping workers"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Unfollow the task"
-msgstr ""
+msgstr "Unfollow the task"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Reopen"
-msgstr ""
+msgstr "Reopen"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Add a comment"
-msgstr ""
+msgstr "Add a comment"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Link"
-msgstr ""
+msgstr "Link"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Code"
-msgstr ""
+msgstr "Code"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
@@ -113,78 +113,78 @@ msgstr ""
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/gantt.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/ongoing.php
 msgid "Title"
-msgstr ""
+msgstr "Title"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
 msgid "Comment"
-msgstr ""
+msgstr "Comment"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
 msgid "Simple text"
-msgstr ""
+msgstr "Simple text"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
 msgid "Rich text"
-msgstr ""
+msgstr "Rich text"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
 msgid "Markdown"
-msgstr ""
+msgstr "Markdown"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
 msgid "PHP code"
-msgstr ""
+msgstr "PHP code"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
 msgid "JavaScript code"
-msgstr ""
+msgstr "JavaScript code"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
 msgid "CSS code"
-msgstr ""
+msgstr "CSS code"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
 msgid "Links"
-msgstr ""
+msgstr "Links"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
 msgid "Type or paste your URL and press Enter to valid"
-msgstr ""
+msgstr "Type or paste your URL and press Enter to valid"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Supervisors"
-msgstr ""
+msgstr "Supervisors"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Workers"
-msgstr ""
+msgstr "Workers"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Spectators"
-msgstr ""
+msgstr "Spectators"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
 msgid "Drag and drop the users into the corresponding role block"
-msgstr ""
+msgstr "Drag and drop the users into the corresponding role block"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "You have no right to modify the roles in this task"
-msgstr ""
+msgstr "You have no right to modify the roles in this task"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "You cannot change the roles because the task is closed"
-msgstr ""
+msgstr "You cannot change the roles because the task is closed"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
@@ -192,216 +192,218 @@ msgstr ""
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/gantt.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/ongoing.php
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel.php
 msgid "Save"
-msgstr ""
+msgstr "Save"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
 msgid "Files"
-msgstr ""
+msgstr "Files"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Roles"
-msgstr ""
+msgstr "Roles"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
 msgid "Manager"
-msgstr ""
+msgstr "Manager"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
 msgid "Worker"
-msgstr ""
+msgstr "Worker"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
 msgid "Spectator"
-msgstr ""
+msgstr "Spectator"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/new.php
 msgid "Create task"
-msgstr ""
+msgstr "Create task"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/search.php
 msgid "Mine"
-msgstr ""
+msgstr "Mine"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/search.php
 msgid "My groups'"
-msgstr ""
+msgstr "My groups'"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/search.php
 msgid "All"
-msgstr ""
+msgstr "All"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/search.php
 msgid "Search or Title for the new task"
-msgstr ""
+msgstr "Search or Title for the new task"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/html/panel/search.php
 msgid "Create a task"
-msgstr ""
+msgstr "Create a task"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/lng/search.php
 msgid "Role"
-msgstr ""
+msgstr "Role"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/lng/search.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/gantt.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/ongoing.php
 msgid "State"
-msgstr ""
+msgstr "State"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/lng/search.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/gantt.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/ongoing.php
 msgid "Duration"
-msgstr "Durata"
+msgstr "Duration"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/lng/search.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/gantt.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/ongoing.php
 msgid "Unknown"
-msgstr ""
+msgstr "Unknown"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/lng/search.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/gantt.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/ongoing.php
 msgid "Start"
-msgstr ""
+msgstr "Start"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/lng/search.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/gantt.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/ongoing.php
 msgid "Last"
-msgstr ""
+msgstr "Last"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/lng/search.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/ongoing.php
 msgid "See task"
-msgstr ""
+msgstr "See task"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Opened tasks"
-msgstr ""
+msgstr "Opened tasks"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/search.php
 msgid "New task"
-msgstr ""
+msgstr "New task"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/new.php
 msgid "Demo task form"
-msgstr ""
+msgstr "Demo task form"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "My ongoing tasks"
-msgstr ""
+msgstr "My ongoing tasks"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Timeline"
-msgstr ""
+msgstr "Timeline"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/search.php
 msgid "Search"
-msgstr "Ricerca"
+msgstr "Search"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Soon"
-msgstr ""
+msgstr "Soon"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "All tasks"
-msgstr ""
+msgstr "All tasks"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Are you sure you want to remove yourself from this task??"
-msgstr ""
+msgstr "Are you sure you want to remove yourself from this task??"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "File"
-msgstr ""
+msgstr "File"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Problem with the file..."
-msgstr ""
+msgstr "Problem with the file..."
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Problem during the upload"
-msgstr ""
+msgstr "Problem during the upload"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "A file with this name already exists"
-msgstr ""
+msgstr "A file with this name already exists"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "User"
-msgstr "Utente"
+msgstr "User"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Date"
-msgstr "Data"
+msgstr "Date"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Action"
-msgstr "Azione"
+msgstr "Action"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Global view"
-msgstr "Vista globale"
+msgstr "Global view"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Events journal"
-msgstr ""
+msgstr "Events journal"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "You have to enter a comment, a link, or a file"
-msgstr ""
+msgstr "You have to enter a comment, a link, or a file"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Are you sure you want to put this task on hold?"
-msgstr ""
+msgstr "Are you sure you want to put this task on hold?"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Are you sure you want to resume this task?"
-msgstr ""
+msgstr "Are you sure you want to resume this task?"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Are you sure you want to close this task?"
-msgstr ""
+msgstr "Are you sure you want to close this task?"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/model/panel.php
 msgid "Are you sure you want to unfollow this task?"
-msgstr ""
+msgstr "Are you sure you want to unfollow this task?"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel.php
 msgid "Projects"
-msgstr "Progetti"
+msgstr "Projects"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/settings.php
 msgid "Settings"
-msgstr ""
+msgstr "Settings"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/tree.php
 msgid ""
 "Sorry, a problem occured while moving this item, and although the tree says "
 "otherwise the item has not been moved."
 msgstr ""
+"Sorry, a problem occured while moving this item, and although the tree says "
+"otherwise the item has not been moved."
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/tree.php
 msgid "Please refresh the tab in order to see the awful truth..."
-msgstr ""
+msgstr "Please refresh the tab"
 
 #: /home/thomas/domains/apstapp.thomas.lan/_appui/vendor/bbn/appui-config/src/mvc/public/panel/tree.php
 msgid "Are you sure you want to move this task?"
-msgstr ""
+msgstr "Are you sure you want to move this task?"
