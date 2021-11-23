@@ -205,7 +205,7 @@ gant_container.kendoGrid({
         }
       },
       template: function(e){
-        var t = moment(e.last_action);
+        var t = dayjs(e.last_action);
         return t.calendar();
       }
     }, {
@@ -240,10 +240,10 @@ gant_container.kendoGrid({
       title: bbn.tasks.lng.duration,
       width: 70,
       template: function(e){
-        var start = moment(e.creation_date),
-            end = moment(e.last_action);
+        var start = dayjs(e.creation_date),
+            end = dayjs(e.last_action);
         if ( e.state === bbn.tasks.states.closed ){
-          end = moment();
+          end = dayjs();
         }
         return end.from(start, true);
         if ( !e.duration ){
@@ -284,7 +284,7 @@ gant_container.kendoGrid({
         }
       },
       template: function(e){
-        var t = moment(e.creation_date);
+        var t = dayjs(e.creation_date);
         return t.calendar();
       }
     }, {
@@ -304,8 +304,8 @@ gant_container.kendoGrid({
         }
       },
       template: function(e){
-        var t = moment(e.deadline),
-            now = moment(),
+        var t = dayjs(e.deadline),
+            now = dayjs(),
             diff = t.unix() - now.unix(),
             col = 'green',
             d = e.state === bbn.tasks.states.closed ? t.calendar() : t.fromNow();

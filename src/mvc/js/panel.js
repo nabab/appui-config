@@ -100,14 +100,14 @@ bbn.fn.extend(bbn.tasks, {
           _init = function(info, ele){
             if ( info.notes ){
               $.each(info.notes, function(i, v){
-                var m = new moment(v.creation);
+                var m = new dayjs(v.creation);
                 info.notes[i].since = m.fromNow();
               });
             }
             var obs = kendo.observable({
               creator: apst.userFull(info.id_user),
               creation: bbn.fn.fdate(info.creation_date),
-              ref: (new moment()).unix(),
+              ref: (new dayjs()).unix(),
               has_deadline: function(){
                 return this.get("deadline") ? true : false;
               },
@@ -290,7 +290,7 @@ bbn.fn.extend(bbn.tasks, {
                   this.post(data.root + 'actions/comment/insert', v, function(d){
                     if ( d.success && d.comment ){
                       d.comment.creation = new Date().getSQL(1);
-                      var m = new moment(d.comment.creation);
+                      var m = new dayjs(d.comment.creation);
                       d.comment.since = m.fromNow();
                       ko.notes.push(d.comment);
                       app.createUpload();
