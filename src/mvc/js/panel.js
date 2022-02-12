@@ -426,7 +426,7 @@ bbn.fn.extend(bbn.tasks, {
         userUID: false,
         fileIconClass: function(file){
           if ( file.extension ){
-            var ext = file.extension.substr(1),
+            var ext = file.extension.substring(1),
                 cls = "file-o";
             if ( ext === "pdf" ){
               return "file-pdf-o";
