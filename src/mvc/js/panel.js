@@ -9,7 +9,7 @@ var tabnav = $("#appui_task_tabnav").tabNav({
   autoload: true,
   list: [{
     url: "search",
-    static: true,
+    fixed: true,
     load: true,
     fcolor: '#000',
     bcolor: '#FFF',
@@ -836,7 +836,7 @@ bbn.fn.extend(bbn.tasks, {
             url: "main",
             title: '<i class="nf nf-fa-eye"> </i> &nbsp; ' + bbn.tasks.lng.global_view,
             content: $("#tpl-task_tab_main").html(),
-            static: true,
+            fixed: true,
             callonce: function(ele){
               return app.mainView();
             }
@@ -844,7 +844,7 @@ bbn.fn.extend(bbn.tasks, {
             url: "people",
             title: '<i class="nf nf-fa-users"> </i> &nbsp; ' + bbn.tasks.lng.roles,
             content: $("#tpl-task_tab_roles").html(),
-            static: true,
+            fixed: true,
             callonce: function(ele){
               app.rolesView();
               return true;
@@ -857,7 +857,7 @@ bbn.fn.extend(bbn.tasks, {
             url: "logs",
             title: '<i class="nf nf-fa-list"> </i> &nbsp; ' + bbn.tasks.lng.journal,
             content: '<div class="tab-logs bbn-overlay"></div>',
-            static: true,
+            fixed: true,
             callonce: function(ele){
               app.logsView();
               return true;
