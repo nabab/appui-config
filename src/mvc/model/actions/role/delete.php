@@ -4,7 +4,7 @@
  *
  **/
 
-/** @var $model \bbn\Mvc\Model*/
+/** @var bbn\Mvc\Model $model */
 
 $res = false;
 if ( isset($model->data['id_task'], $model->data['id_user']) ){

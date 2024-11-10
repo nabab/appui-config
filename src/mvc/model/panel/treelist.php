@@ -4,7 +4,7 @@
  *
  **/
 
-/** @var $model \bbn\Mvc\Model*/
+/** @var bbn\Mvc\Model $model */
 $pm = new \bbn\Appui\Task($model->db);
 $grid = new \bbn\Appui\Grid($model->db, $model->data, 'bbn_tasks', [
   'reference',

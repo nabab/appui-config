@@ -4,7 +4,7 @@
  *
  **/
 
-/** @var $model \bbn\Mvc\Model*/
+/** @var bbn\Mvc\Model $model */
 $pm = new \bbn\Appui\Task($model->db);
 return [
   'success' => isset($model->data['id_task'], $model->data['prop']) ?

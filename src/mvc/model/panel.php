@@ -4,7 +4,7 @@
  *
  **/
 
-/** @var $model \bbn\Mvc\Model*/
+/** @var bbn\Mvc\Model $model */
 $s =& $model->inc->session;
 $pm = new \bbn\Appui\Task($model->db);
 return [

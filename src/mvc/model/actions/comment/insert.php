@@ -4,7 +4,7 @@
  *
  **/
 
-/** @var $model \bbn\Mvc\Model*/
+/** @var bbn\Mvc\Model $model */
 if ( isset($model->data['id']) ){
   $pm = new \bbn\Appui\Task($model->db);
   $res = $pm->comment($model->data['id'], [

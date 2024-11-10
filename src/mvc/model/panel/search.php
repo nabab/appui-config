@@ -4,7 +4,7 @@
  *
  **/
 
-/** @var $model \bbn\Mvc\Model*/
+/** @var bbn\Mvc\Model $model */
 
 if ( isset($model->data['search']) ){
   $pm = new \bbn\Appui\Task($model->db);

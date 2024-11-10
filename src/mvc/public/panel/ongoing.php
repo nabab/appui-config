@@ -4,7 +4,7 @@
  *
  **/
 
-/** @var $ctrl \bbn\Mvc\Controller */
+/** @var bbn\Mvc\Controller $ctrl */
 if ( !isset($ctrl->post['id']) ){
   echo $ctrl->setTitle('<i class="nf nf-fa-clock"> </i> &nbsp; _("Mes tâches en cours")')->addJs([
     'root' => $ctrl->data['root'],

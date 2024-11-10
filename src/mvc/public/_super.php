@@ -4,7 +4,7 @@
  *
  **/
 
-/** @var $ctrl \bbn\Mvc\Controller */
+/** @var bbn\Mvc\Controller $ctrl */
 
 // cd ~/_lib/vendor/bbn/bbn-task/src
 // find . -iname "*.php" | xargs xgettext

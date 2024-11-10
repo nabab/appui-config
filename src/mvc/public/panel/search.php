@@ -4,7 +4,7 @@
  *
  **/
 
-/** @var $ctrl \bbn\Mvc\Controller */
+/** @var bbn\Mvc\Controller $ctrl */
 if ( !isset($ctrl->post['search']) ){
   $ctrl->combo('<i class="nf nf-fa-home bbn-lg" title="'._("New task").' / '._("Search").'"> </i>', [
     'root' => $ctrl->data['root'],

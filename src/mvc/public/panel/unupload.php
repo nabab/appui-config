@@ -4,7 +4,7 @@
  *
  **/
 
-/** @var $ctrl \bbn\Mvc\Controller */
+/** @var bbn\Mvc\Controller $ctrl */
 $ctrl->obj->success = false;
 if ( isset($ctrl->arguments[0], $ctrl->post['fileNames']) ){
   $path = BBN_USER_PATH.'tmp/'.$ctrl->arguments[0];

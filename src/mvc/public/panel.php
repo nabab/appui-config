@@ -5,7 +5,7 @@
  **/
 use bbn\X;
 
-/** @var $ctrl \bbn\Mvc\Controller */
+/** @var bbn\Mvc\Controller $ctrl */
 
 // Needed for the tabNav!!
 

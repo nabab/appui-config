@@ -4,6 +4,6 @@
  *
  **/
 
-/** @var $ctrl \bbn\Mvc\Controller */
+/** @var bbn\Mvc\Controller $ctrl */
 
 $ctrl->combo('<i class="nf nf-fa-file_text"> </i> &nbsp; '._("Demo task form"), 1);

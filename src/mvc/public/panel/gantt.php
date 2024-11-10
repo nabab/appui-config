@@ -4,7 +4,7 @@
  *
  **/
 
-/** @var $ctrl \bbn\Mvc\Controller */
+/** @var bbn\Mvc\Controller $ctrl */
 echo $ctrl->setTitle("Gantt")->addJs([
   'root' => $ctrl->data['root'],
   'lng' => [
