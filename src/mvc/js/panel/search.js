@@ -68,7 +68,7 @@ var operators = kendo.ui.FilterCell.fn.options.operators,
             is_parent: {type: "boolean"},
             creation_date: {type: "date"},
             last_action: {type: "date"},
-            title: {type: "string"},
+            label: {type: "string"},
             priority: {type: "number", nullable: false},
             state: {type: "number"},
             num_notes: {type: "number"},
@@ -121,7 +121,7 @@ gant_container.kendoGrid({
   columns: [
     {
       field: "id_user",
-      title: bbn.tasks.lng.user,
+      label: bbn.tasks.lng.user,
       template: function(e){
         return apst.userAvatarImg(e.id_user);
       },
@@ -129,7 +129,7 @@ gant_container.kendoGrid({
       values: appui.users
     }, {
       field: "priority",
-      title: bbn.tasks.lng.priority,
+      label: bbn.tasks.lng.priority,
       width: 60,
       attributes: {
         style: "text-align: center; font-weight: bold; border-top: 1px solid white; color: white"
@@ -145,7 +145,7 @@ gant_container.kendoGrid({
       },
     }, {
       field: "num_notes",
-      title: "#Notes",
+      label: "#Notes",
       filterable: {
         operators:{
           number: {
@@ -162,7 +162,7 @@ gant_container.kendoGrid({
         multi: true
       },
       sortable: false,
-      title: bbn.tasks.lng.state,
+      label: bbn.tasks.lng.state,
       width: 50,
       values: bbn.tasks.options.states,
       encoded: false,
@@ -193,7 +193,7 @@ gant_container.kendoGrid({
       }
     }, {
       field: "last_action",
-      title: bbn.tasks.lng.last,
+      label: bbn.tasks.lng.last,
       width: 100,
       filterable: {
         operators:{
@@ -214,7 +214,7 @@ gant_container.kendoGrid({
         multi: true
       },
       sortable: false,
-      title: bbn.tasks.lng.role,
+      label: bbn.tasks.lng.role,
       width: 80,
       values: bbn.tasks.options.roles,
       template: function(e){
@@ -226,7 +226,7 @@ gant_container.kendoGrid({
         multi: true
       },
       sortable: false,
-      title: bbn.tasks.lng.type,
+      label: bbn.tasks.lng.type,
       attributes: {
         style: "max-width: 300px",
       },
@@ -237,7 +237,7 @@ gant_container.kendoGrid({
       }
     }, {
       field: "duration",
-      title: bbn.tasks.lng.duration,
+      label: bbn.tasks.lng.duration,
       width: 70,
       template: function(e){
         var start = dayjs(e.creation_date),
@@ -260,19 +260,19 @@ gant_container.kendoGrid({
       hidden: true
     }, {
       field: "title",
-      title: bbn.tasks.lng.title,
+      label: bbn.tasks.lng.title,
       menu: false,
       expandable: true,
       filterable: false,
     }, {
       field: "reference",
-      title: bbn.tasks.lng.reference,
+      label: bbn.tasks.lng.reference,
       encoded: false,
       filterable: false,
       hidden: true
     }, {
       field: "creation_date",
-      title: bbn.tasks.lng.start,
+      label: bbn.tasks.lng.start,
       width: 100,
       filterable: {
         operators:{
@@ -289,7 +289,7 @@ gant_container.kendoGrid({
       }
     }, {
       field: "deadline",
-      title: bbn.tasks.lng.dead,
+      label: bbn.tasks.lng.dead,
       width: 100,
       encoded: false,
       filterable: {
@@ -329,7 +329,7 @@ gant_container.kendoGrid({
       }
     }, {
       field: "id",
-      title: " ",
+      label: " ",
       menu: false,
       filterable: false,
       sortable: false,

@@ -13,7 +13,7 @@ var tabnav = $("#appui_task_tabnav").tabNav({
     load: true,
     fcolor: '#000',
     bcolor: '#FFF',
-    title: '<i class="nf nf-fa-home bbn-lg" title="' + data.lng.new_task_search+ '"> </i>'
+    label: '<i class="nf nf-fa-home bbn-lg" title="' + data.lng.new_task_search+ '"> </i>'
   }]
 });
 

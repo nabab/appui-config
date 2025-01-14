@@ -26,7 +26,7 @@ var ds = new kendo.data.TreeListDataSource({
             is_parent: {type: "boolean"},
             first: {type: "date"},
             last: {type: "date"},
-            title: {type: "string"},
+            label: {type: "string"},
             priority: {type: "number"},
             state: {type: "string"},
             type: {type: "string"},
@@ -56,11 +56,11 @@ gant_container.kendoTreeList({
   columns: [
     {
       field: "title",
-      title: data.lng.title,
+      label: data.lng.title,
       expandable: true,
     }, {
       field: "priority",
-      title: "!",
+      label: "!",
       attributes: {
         style: "text-align: center; font-weight: bold; border-top: 1px solid #FFF"
       },
@@ -73,19 +73,19 @@ gant_container.kendoTreeList({
       hidden: true
     }, {
       field: "type",
-      title: data.lng.type,
+      label: data.lng.type,
       width: 150
     }, {
       field: "num_notes",
-      title: "#",
+      label: "#",
       width: 50
     }, {
       field: "state",
-      title: data.lng.state,
+      label: data.lng.state,
       width: 120
     }, {
       field: "duration",
-      title: data.lng.duration,
+      label: data.lng.duration,
       width: 100,
       template: function(e){
         if ( !e.duration ){
@@ -102,7 +102,7 @@ gant_container.kendoTreeList({
       hidden: true
     }, {
       field: "first",
-      title: data.lng.start,
+      label: data.lng.start,
       width: 100,
       hidden: true,
       template: function(e){
@@ -111,7 +111,7 @@ gant_container.kendoTreeList({
       }
     }, {
       field: "last",
-      title: data.lng.last,
+      label: data.lng.last,
       width: 100,
       hidden: true,
       template: function(e){
@@ -120,7 +120,7 @@ gant_container.kendoTreeList({
       }
     }, {
       field: "target_date",
-      title: data.lng.deadline,
+      label: data.lng.deadline,
       width: 100,
       template: function(e){
         var t = dayjs(e.last);
@@ -128,7 +128,7 @@ gant_container.kendoTreeList({
       }
     }, {
       field: "id",
-      title: " ",
+      label: " ",
       width: 50,
       template: function(e){
         return '<a href="' + data.root + 'tasks/' + e.id + '" title="' + data.lng.see_task + '"><button class="k-button"><i class="nf nf-fa-eye"> </i></button></a>';
