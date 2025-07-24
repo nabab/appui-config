@@ -105,7 +105,7 @@ bbn.fn.extend(bbn.tasks, {
               });
             }
             var obs = kendo.observable({
-              creator: apst.userFull(info.id_user),
+              creator: appui.app.userFull(info.id_user),
               creation: bbn.fn.fdate(info.creation_date),
               ref: (new dayjs()).unix(),
               has_deadline: function(){
@@ -605,7 +605,7 @@ bbn.fn.extend(bbn.tasks, {
               if ( e.item.is_parent ){
                 return '<i class="nf nf-fa-users"> </i> ' + e.item.text;
               }
-              return apst.userFull(e.item.id);
+              return appui.app.userFull(e.item.id);
             }
           }).data("kendoTreeView");
           $li = $("li.k-item", app.roleTree.element);
@@ -724,7 +724,7 @@ bbn.fn.extend(bbn.tasks, {
               },
               sortable: false,
               template: function(e){
-                return apst.userAvatarImg(e.id_user);
+                return appui.app.userAvatarImg(e.id_user);
               }
             }, {
               title: bbn.tasks.lng.user,
@@ -732,7 +732,7 @@ bbn.fn.extend(bbn.tasks, {
               field: "id_user",
               width: 150,
               template: function(e){
-                return apst.userName(e.id_user);
+                return appui.app.userName(e.id_user);
               }
             }, {
               title: bbn.tasks.lng.date,

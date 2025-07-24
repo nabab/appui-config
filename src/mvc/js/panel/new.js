@@ -87,7 +87,7 @@ kendo.bind(ele, {
           $("div.bbn-task-roles-container").append(
             $('<div class="bbn-nl"/>').append(
               /** @todo Change this! */
-              '<span>' + apst.fnom(d.res)  + ' (' + frole + ')</span> &nbsp; ',
+              '<span>' + appui.app.fnom(d.res)  + ' (' + frole + ')</span> &nbsp; ',
               $('<i class="nf nf-fa-times bbn-p"/>').click(function(e){
                 var del = function(){
                   var idx = $.inArray(dataItem.users, id_user);

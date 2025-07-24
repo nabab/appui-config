@@ -123,7 +123,7 @@ gant_container.kendoGrid({
       field: "id_user",
       label: bbn.tasks.lng.user,
       template: function(e){
-        return apst.userAvatarImg(e.id_user);
+        return appui.app.userAvatarImg(e.id_user);
       },
       width: 50,
       values: appui.users

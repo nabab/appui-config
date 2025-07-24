@@ -185,10 +185,10 @@
 <script type="text/x-kendo-template" id="tpl-appui_task_comment">
 	<div class="ui comment">
   	<a class="avatar">
-    	<img src="#= apst.userAvatar(id_user) #" alt="#= apst.userName(id_user)#" title="#= apst.userName(id_user)#">
+    	<img src="#= appui.app.userAvatar(id_user) #" alt="#= appui.app.userName(id_user)#" title="#= appui.app.userName(id_user)#">
     </a>
     <div class="content">
-    	<a class="author">#= apst.userName(id_user) #</a>
+    	<a class="author">#= appui.app.userName(id_user) #</a>
       <div class="metadata">
         <div class="date" data-bind="text: since"></div>
         <!--<div class="rating">
@@ -258,7 +258,7 @@
   </div>
 </script>
 <script type="text/x-kendo-template" id="tpl-task_info_ppl">
-<li>#= apst.userFull(data) #</li>
+<li>#= appui.app.userFull(data) #</li>
 </script>
 <script type="text/x-kendo-template" id="tpl-task_form_new">
 	<form method="post">
