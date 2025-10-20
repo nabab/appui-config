@@ -62,7 +62,7 @@ if ( isset($model->data['selection']) ){
     array_push($res, ['my_user', '=', $model->inc->user->getId()]);
   }
   else if ( $model->data['selection'] === 'group' ){
-    array_push($res, ['my_group', '=', $model->inc->user->getGroup()]);
+    array_push($res, ['my_group', '=', $model->inc->user->getIdGroup()]);
   }
 }
 return $pm->search($res, $sort, $model->data['skip'] ?? 0, $model->data['take'] ?? 25);
