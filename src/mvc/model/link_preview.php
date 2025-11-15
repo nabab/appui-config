@@ -3,9 +3,9 @@
  * Describe what it does or you're a pussy
  *
  **/
-
+use bbn\Str;
 /** @var bbn\Mvc\Model $model */
-if ( isset($model->data['url'], $model->data['ref']) && \bbn\Str::isUrl($model->data['url']) ){
+if ( isset($model->data['url'], $model->data['ref']) && Str::isUrl($model->data['url']) ){
   $linkPreview = new \LinkPreview\LinkPreview($model->data['url']);
   $parsed = $linkPreview->getParsed();
   $path = BBN_USER_PATH.'tmp/'.$model->data['ref'].'/';
@@ -30,14 +30,14 @@ if ( isset($model->data['url'], $model->data['ref']) && \bbn\Str::isUrl($model->
       }
       foreach ( $pictures as $pic ){
         $saved = @file_get_contents($pic);
-        if ( $saved && (strlen($saved) > 1000) ){
-          $new = \bbn\Str::encodeFilename(basename($pic), \bbn\Str::fileExt(basename($pic)));
+        if ( $saved && (Str::len($saved) > 1000) ){
+          $new = Str::encodeFilename(basename($pic), Str::fileExt(basename($pic)));
           file_put_contents($path.$root.'/'.$new, $saved);
           unset($saved);
           $img = new \bbn\File\Image($path.$root.'/'.$new);
           if ( $img->test() && ($imgs = $img->thumbs($path.$root)) ){
             array_push($r['pictures'], array_map(function($a) use($path){
-              return substr($a, strlen($path));
+              return Str::sub($a, Str::len($path));
             }, $imgs));
           }
         }
