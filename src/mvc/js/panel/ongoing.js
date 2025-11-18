@@ -106,7 +106,7 @@ gant_container.kendoTreeList({
       width: 100,
       hidden: true,
       template: function(e){
-        var t = dayjs(e.first);
+        var t = bbn.date(e.first);
         return t.fromNow();
       }
     }, {
@@ -115,7 +115,7 @@ gant_container.kendoTreeList({
       width: 100,
       hidden: true,
       template: function(e){
-        var t = dayjs(e.last);
+        var t = bbn.date(e.last);
         return t.format("DD MMM YY");
       }
     }, {
@@ -123,7 +123,7 @@ gant_container.kendoTreeList({
       label: data.lng.deadline,
       width: 100,
       template: function(e){
-        var t = dayjs(e.last);
+        var t = bbn.date(e.last);
         return t.format("DD MMM YY");
       }
     }, {
