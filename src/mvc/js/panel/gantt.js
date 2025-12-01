@@ -92,7 +92,7 @@ $("div.bbn-task-gantt", ele).kendoTreeList({
       title: data.lng.start,
       width: 100,
       template: function(e){
-        var t = bbn.date(e.first);
+        var t = bbn.dt(e.first);
         return t.fromNow();
       }
     }, {
@@ -100,7 +100,7 @@ $("div.bbn-task-gantt", ele).kendoTreeList({
       title: data.lng.last,
       width: 100,
       template: function(e){
-        var t = bbn.date(e.last);
+        var t = bbn.dt(e.last);
         return t.format("DD MMM YY");
       }
     }, {
